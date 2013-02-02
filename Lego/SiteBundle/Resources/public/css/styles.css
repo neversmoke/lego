@@ -31,9 +31,9 @@ html {
 }
 .catalog-product-compare-index > div { min-width:600px;}
 
-body          { background:url(/img/bg.gif) 50% 0%; font-family:Arial; font-size:0.75em; line-height:1.5em; color:#6a6969; text-align:center; min-width:1205px; }
+body          { background:url(/bundles/legosite/img/bg.gif) 50% 0%; font-family:Arial; font-size:0.75em; line-height:1.5em; color:#6a6969; text-align:center; min-width:1205px; }
 body > .wrapper { position:relative;}
-.wrapper-tail{ background:url(/img/bg_all.jpg) no-repeat 50% 0%; }
+.wrapper-tail{ background:url(/bundles/legosite/img/bg_all.jpg) no-repeat 50% 0%; }
 
 img           { border:0; vertical-align:top; }
 
@@ -101,8 +101,8 @@ ul,ol         { list-style:none; }
 .page-empty { background:#fff; padding:20px; text-align:left; }
 .page-popup { padding:20px; text-align:left; margin:0 auto; background:#fff;}
 .page-popup  .ratings .rating-box {float:none; margin:0 auto 10px;}
-.main-container { background:url(/img/bg_content.png) repeat-y; width:1086px; margin:0 -11px; }
-.main { background:url(/img/bg_content_top.png) no-repeat; padding:0 29px 22px 30px; }
+.main-container { background:url(/bundles/legosite/img/bg_content.png) repeat-y; width:1086px; margin:0 -11px; }
+.main { background:url(/bundles/legosite/img/bg_content_top.png) no-repeat; padding:0 29px 22px 30px; }
 
 /* Base Columns */
 .col-left { float:left;width:238px; padding-top:11px; }
@@ -167,14 +167,14 @@ button.button span {
 	  color:#fff; 
 	  text-transform:uppercase;
 			padding:0 22px 0 0;
-			background:url(/img/button.png) no-repeat 100% 0%;
+			background:url(/bundles/legosite/img/button.png) no-repeat 100% 0%;
 }
-button.button span span { background:url(/img/button.png) no-repeat 0% 0%; padding:0 0 0 21px; display:block; float:left;}
+button.button span span { background:url(/bundles/legosite/img/button.png) no-repeat 0% 0%; padding:0 0 0 21px; display:block; float:left;}
 button.button:hover span {
-	  background:url(/img/button.png) no-repeat 100% -32px;
+	  background:url(/bundles/legosite/img/button.png) no-repeat 100% -32px;
 }
 button.button:hover span span {
-	  background:url(/img/button.png) no-repeat 0% -32px;
+	  background:url(/bundles/legosite/img/button.png) no-repeat 0% -32px;
 }
 	
 /**********  Button fancybox Product *****************************************/	
@@ -351,7 +351,7 @@ p.control input.radio { margin-right:6px; }
 .fieldset .legend {font-weight:bold; font-size:12px; text-transform:uppercase; position:relative; padding-bottom:8px; color:#0CA6C4; }
 
 /* Form Validation */
-.validation-advice { clear:both; min-height:13px; margin:3px 0 0; padding-left:12px; font-size:10px; line-height:13px; background:url(/img/validation_advice_bg.gif) 2px 3px no-repeat; color:#f00; }
+.validation-advice { clear:both; min-height:13px; margin:3px 0 0; padding-left:12px; font-size:10px; line-height:13px; background:url(/bundles/legosite/img/validation_advice_bg.gif) 2px 3px no-repeat; color:#f00; }
 .validation-failed { border:1px dashed #f00 !important; background:#faebe7 !important; }
 .validation-passed {}
 p.required { font-size:10px; text-align:right; color:#f00; }
@@ -379,7 +379,7 @@ div.alert {position:fixed;background:#353535; top:0; left:50%; width:333px; marg
 .addthis_button_tweet {width:90px  !important;}
 
 
-div.alert button{background:url(/img/remove-popup.png) 0 0 no-repeat; width:9px; height:9px; position:absolute; right:20px; top:45%; border:none; z-index:9999;}
+div.alert button{background:url(/bundles/legosite/img/remove-popup.png) 0 0 no-repeat; width:9px; height:9px; position:absolute; right:20px; top:45%; border:none; z-index:9999;}
 div.alert button:hover{ cursor:pointer; background-position:0 -9px;}
 
 .error-msg,
@@ -388,23 +388,23 @@ div.alert button:hover{ cursor:pointer; background-position:0 -9px;}
 .notice-msg { border-style:solid !important; border-width:1px !important; background-position:20px 7px !important; background-repeat:no-repeat !important; min-height:24px !important; padding:8px 8px 8px 70px !important; font-size:12px !important; font-weight:bold !important; }
 .error-msg ,
 .success-msg  {border-color:#ebbcb5;}
-.error-msg {  background:url(/img/i_msg-error.gif) left -3px no-repeat #fde4e1; color:#df0505; font-weight:bold;  }
-.success-msg { background-color:#f7fde1; background-image:url(/img/i_msg-success.png); color:#0CA6C4; font-weight:bold; }
+.error-msg {  background:url(/bundles/legosite/img/i_msg-error.gif) left -3px no-repeat #fde4e1; color:#df0505; font-weight:bold;  }
+.success-msg { background-color:#f7fde1; background-image:url(/bundles/legosite/img/i_msg-success.png); color:#0CA6C4; font-weight:bold; }
 .note-msg,
-.notice-msg { background:url(/img/i_msg-note.gif) 25px 10px no-repeat #fafaec!important; border-color:#fcd344; color:#0CA6C4; font-weight:bold; border-radius:4px;}
+.notice-msg { background:url(/bundles/legosite/img/i_msg-note.gif) 25px 10px no-repeat #fafaec!important; border-color:#fcd344; color:#0CA6C4; font-weight:bold; border-radius:4px;}
 
 /* BreadCrumbs */
 .breadcrumbs { padding:5px 10px 15px 19px; overflow:hidden; }
 .breadcrumbs li { float:left; }
 .breadcrumbs li a {}
-.breadcrumbs li span {display:inline-block; text-indent:-77777px; height:13px; width:4px; background:url(/img/breadcrumbs.png) no-repeat left 8px; margin:0 7px 0 5px;}
+.breadcrumbs li span {display:inline-block; text-indent:-77777px; height:13px; width:4px; background:url(/bundles/legosite/img/breadcrumbs.png) no-repeat left 8px; margin:0 7px 0 5px;}
 .breadcrumbs li strong {font-weight:normal; color:#383737;}
 
 /* Page Heading */
 .page-title,
-.category-title { background:url(/img/page_title2.gif) no-repeat; padding:22px 20px 22px 27px; margin:0 0 20px; }
+.category-title { background:url(/bundles/legosite/img/page_title2.gif) no-repeat; padding:22px 20px 22px 27px; margin:0 0 20px; }
 
-.col1-layout .page-title { background:url(/img/page_title.gif) no-repeat; }
+.col1-layout .page-title { background:url(/bundles/legosite/img/page_title.gif) no-repeat; }
 
 .page-title h1,
 .page-title h2 { font-size:23px; color:#357DCD; font-family: 'Anton', Impact, sans-serif; text-transform:uppercase; margin:0; }
@@ -498,7 +498,7 @@ div.alert button:hover{ cursor:pointer; background-position:0 -9px;}
 .pager .pages { margin:3px 135px 0 135px; }
 .pager .pages  strong{ font-weight:normal; color:#000;padding-right:7px;}
 .pager .pages ol { display:inline;  }
-.pager .pages li { display:inline; border:1px solid #ececec;  padding:1px 0px 1px 0px;background:url(/img/tail-pag.gif) 0 0 repeat-x #fbfbfb; color:#737373; font-size:11px; font-weight:bold; margin-right:3px; }
+.pager .pages li { display:inline; border:1px solid #ececec;  padding:1px 0px 1px 0px;background:url(/bundles/legosite/img/tail-pag.gif) 0 0 repeat-x #fbfbfb; color:#737373; font-size:11px; font-weight:bold; margin-right:3px; }
 .pager .pages li span{padding:0px 5px 0px 5px;}
 .pager .pages li:hover{border:1px solid #333333; background:#333333; color:#fff; cursor:pointer;}
 .pager .pages li:hover a{ color:#fff;}
@@ -511,12 +511,12 @@ div.alert button:hover{ cursor:pointer; background-position:0 -9px;}
 .sorter {  padding:7px 9px 3px 9px; margin:5px 0; }
 .sorter .view-mode { float:left; }
 .sorter .view-mode { float:left; text-indent:-77777px; overflow:hidden; height:24px; width:100px; margin:1px 0 0 0;}
-.sorter .view-mode .grid {display:block; float:left; width:25px; height:24px; background:url(/img/grid-list.png) no-repeat left top;}
+.sorter .view-mode .grid {display:block; float:left; width:25px; height:24px; background:url(/bundles/legosite/img/grid-list.png) no-repeat left top;}
 .sorter .view-mode a.grid {background-position:0 -24px;}
 .sorter .view-mode a.grid:hover {background-position:0 top;}
-.sorter .list {display:block; float:left; width:25px; height:24px; background:url(/img/grid-list.png) no-repeat right -24px; margin-left:5px; }
-.sorter a.list {background:url(/img/grid-list.png) no-repeat right -24px;}
-.sorter strong.list {background:url(/img/grid-list.png) no-repeat right 0px;}
+.sorter .list {display:block; float:left; width:25px; height:24px; background:url(/bundles/legosite/img/grid-list.png) no-repeat right -24px; margin-left:5px; }
+.sorter a.list {background:url(/bundles/legosite/img/grid-list.png) no-repeat right -24px;}
+.sorter strong.list {background:url(/bundles/legosite/img/grid-list.png) no-repeat right 0px;}
 .sorter a.list:hover {background-position:right 0px;}
 .sorter .sort-by { float:right; min-width:152px; }
 .sorter .sort-by .jqTransformSelectWrapper{ width:100px!important; }
@@ -526,7 +526,7 @@ div.alert button:hover{ cursor:pointer; background-position:0 -9px;}
 .sorter .link-feed {}
 #easyTooltip{padding:5px 10px;border:1px solid #0CA6C4;background:#0CA6C4;color:#fff;font-size:12px; text-transform:uppercase;text-transform:none;position:relative;z-index:99;font-weight:normal;}
 /* Toolbar */
-.toolbar { border:1px solid #ececec; background:url(/img/tail-toolbar.gif) 0 bottom repeat-x #fff; margin-bottom:20px;}
+.toolbar { border:1px solid #ececec; background:url(/bundles/legosite/img/tail-toolbar.gif) 0 bottom repeat-x #fff; margin-bottom:20px;}
 .toolbar select {text-align:center; min-width:63px;}
 .toolbar .pager { padding:4px 9px 6px 19px;}
 .toolbar .sorter {}
@@ -558,7 +558,7 @@ div.alert button:hover{ cursor:pointer; background-position:0 -9px;}
 /* Shopping cart total summary row expandable to details */
 tr.summary-total { cursor:pointer; }
 tr.summary-total td {}
-tr.summary-total .summary-collapse { float:right; text-align:right; padding-left:20px; background:url(/img/bkg_collapse.gif) 0 4px no-repeat; cursor:pointer; }
+tr.summary-total .summary-collapse { float:right; text-align:right; padding-left:20px; background:url(/bundles/legosite/img/bkg_collapse.gif) 0 4px no-repeat; cursor:pointer; }
 tr.show-details .summary-collapse { background-position:0 -53px; }
 tr.show-details td {}
 tr.summary-details td { font-size:11px; background-color:#dae1e4; color:#626465; }
@@ -569,7 +569,7 @@ tr.summary-details-excluded { font-style:italic; }
 .cart-tax-info { display:block; }
 .cart-tax-info,
 .cart-tax-info .cart-price { padding-right:20px; }
-.cart-tax-total { display:block; padding-right:20px; background:url(/img/bkg_collapse.gif) 100% 4px no-repeat; cursor:pointer; }
+.cart-tax-total { display:block; padding-right:20px; background:url(/bundles/legosite/img/bkg_collapse.gif) 100% 4px no-repeat; cursor:pointer; }
 .cart-tax-info .price,
 .cart-tax-total .price { display:inline !important; font-weight:normal !important; }
 .cart-tax-total-expanded { background-position:100% -53px; }
@@ -613,12 +613,12 @@ tr.summary-details-excluded { font-style:italic; }
 .link-wishlist { font-weight:bold; }
 .link-reorder { font-weight:bold; }
 .link-compare { font-weight:bold; }
-.link-print { background:url(/img/i_print.gif) 0 2px no-repeat; padding:2px 0 2px 25px; }
-.link-rss { background:url(/img/i_rss.gif) 0 1px no-repeat; padding-left:18px; white-space:nowrap; }
-.btn-remove { display:block; width:19px; height:19px; font-size:0; line-height:0; background:url(/img/btn_remove.gif) 0 0 no-repeat; text-indent:-999em; overflow:hidden; margin-left:2px; }
-.btn-remove2 { display:block; width:36px; height:38px; font-size:0; line-height:0; background:url(/img/cart-delete.png) 0 0 no-repeat; text-indent:-999em; overflow:hidden; }
+.link-print { background:url(/bundles/legosite/img/i_print.gif) 0 2px no-repeat; padding:2px 0 2px 25px; }
+.link-rss { background:url(/bundles/legosite/img/i_rss.gif) 0 1px no-repeat; padding-left:18px; white-space:nowrap; }
+.btn-remove { display:block; width:19px; height:19px; font-size:0; line-height:0; background:url(/bundles/legosite/img/btn_remove.gif) 0 0 no-repeat; text-indent:-999em; overflow:hidden; margin-left:2px; }
+.btn-remove2 { display:block; width:36px; height:38px; font-size:0; line-height:0; background:url(/bundles/legosite/img/cart-delete.png) 0 0 no-repeat; text-indent:-999em; overflow:hidden; }
 .btn-remove2:hover{ background-position:0 -67px!important;}
-.btn-edit    { display:block; width:11px; height:11px; font-size:0; line-height:0; background:url(/img/btn_edit.gif) 0 0 no-repeat; text-indent:-999em; overflow:hidden; margin-left:2px;}
+.btn-edit    { display:block; width:11px; height:11px; font-size:0; line-height:0; background:url(/bundles/legosite/img/btn_edit.gif) 0 0 no-repeat; text-indent:-999em; overflow:hidden; margin-left:2px;}
 .btn-remove:hover{ background-position:0 bottom;}
 .cards-list dt { margin:5px 0 0; }
 .cards-list .offset { padding:2px 0 2px 20px; }
@@ -630,14 +630,14 @@ tr.summary-details-excluded { font-style:italic; }
 
 /* Noscript Notice */
 .noscript { border:1px solid #ddd; border-width:0 0 1px; background:#ffff90; font-size:12px; line-height:1.25; text-align:center; color:#2f2f2f; }
-.noscript .noscript-inner { width:1000px; margin:0 auto; padding:12px 0 12px; background:url(/img/i_notice.gif) 20px 50% no-repeat; }
+.noscript .noscript-inner { width:1000px; margin:0 auto; padding:12px 0 12px; background:url(/bundles/legosite/img/i_notice.gif) 20px 50% no-repeat; }
 .noscript p { margin:0; }
 
 /* Demo Notice */
 .demo-notice { margin:0; padding:6px 10px; background:#d75f07; font-size:12px; line-height:1.15; text-align:center; color:#fff; }
 /* Cookie Notice */
 .notice-cookie { border-bottom:1px solid #cfcfcf; background:#ffff90; font-size:12px; line-height:1.25; text-align:center; color:#2f2f2f; }
-.notice-cookie .notice-inner { width:870px; margin:0 auto; padding:12px 0 12px 80px; background:url(/img/i_notice.gif) 20px 25px no-repeat; text-align:left; }
+.notice-cookie .notice-inner { width:870px; margin:0 auto; padding:12px 0 12px 80px; background:url(/bundles/legosite/img/i_notice.gif) 20px 25px no-repeat; text-align:left; }
 .notice-cookie .notice-inner p { margin:0 0 10px; border:1px dotted #cccc73; padding:10px; }
 .notice-cookie .notice-inner .actions { }
 /* ======================================================================================= */
@@ -659,10 +659,10 @@ tr.summary-details-excluded { font-style:italic; }
 .header .links li a {display:inline-block;color:#fff;}
 .header .links li a:hover {color:#FBDB03;}
 .header .links  #FME-contact-form{ display:none;}
-.header .form-search { float:right; background:url(/img/bg_search.png) no-repeat; width:325px; height:35px; padding:0 30px 0 17px; margin:0 -2px 25px 0; }
+.header .form-search { float:right; background:url(/bundles/legosite/img/bg_search.png) no-repeat; width:325px; height:35px; padding:0 30px 0 17px; margin:0 -2px 25px 0; }
 .header .form-search label { float:left; padding:3px 11px 0 0; font-family:'Anton', Impact, arial; font-size:16px; text-transform:uppercase; color:#fff; }
 .header .form-search .input-text { float:left; background:none; border:0; width:218px; height:18px; margin:3px 0 0 0; padding:0; line-height:18px; color:#fff; }
-.header .form-search .btn_search { float:right; margin:3px 0 0 0; background:url(/img/btn_search.png) no-repeat; width:18px; height:19px; border:0; cursor:pointer; }
+.header .form-search .btn_search { float:right; margin:3px 0 0 0; background:url(/bundles/legosite/img/btn_search.png) no-repeat; width:18px; height:19px; border:0; cursor:pointer; }
 .header .form-search .search-autocomplete img{ float:left; margin-right:10px; margin-bottom:10px;}
 .header .form-search .search-autocomplete { z-index:999; }
 .header .form-search .search-autocomplete ul { border:1px solid #ddd; background-color:#fff; }
@@ -680,13 +680,13 @@ tr.summary-details-excluded { font-style:italic; }
 .header_menu li { float:left; font-family:'Anton', Impact, arial; font-size:19px; text-transform:uppercase; line-height:18px; }
 .header_menu li a { float:left; color:#fff; text-align:center; }
 
-.link1 a { position:relative; z-index:1; margin:0 -7px 0 0; background:url(/img/link1.png) no-repeat; width:151px; height:57px; padding:35px 0 0 0; }
-.link2 a { position:relative; z-index:2; margin:0 -9px 0 0; background:url(/img/link2.png) no-repeat; width:154px; height:57px; padding:35px 0 0 0; }
-.link3 a { position:relative; z-index:3; margin:0 -13px 0 0; background:url(/img/link3.png) no-repeat; width:160px; height:69px; padding:23px 0 0 0; }
-.link4 a { position:relative; z-index:4; margin:0 -5px 0 0; background:url(/img/link4.png) no-repeat; width:154px; height:57px; padding:35px 0 0 0; }
-.link5 a { position:relative; z-index:5; margin:0 -5px 0 0; background:url(/img/link5.png) no-repeat; width:148px; height:57px; padding:35px 0 0 0; }
-.link6 a { position:relative; z-index:6; margin:0 -10px 0 0; background:url(/img/link6.png) no-repeat; width:158px; height:69px; padding:23px 0 0 0; }
-.link7 a { position:relative; z-index:7; margin:0; background:url(/img/link7.png) no-repeat; width:150px; height:57px; padding:35px 0 0 0; }
+.link1 a { position:relative; z-index:1; margin:0 -7px 0 0; background:url(/bundles/legosite/img/link1.png) no-repeat; width:151px; height:57px; padding:35px 0 0 0; }
+.link2 a { position:relative; z-index:2; margin:0 -9px 0 0; background:url(/bundles/legosite/img/link2.png) no-repeat; width:154px; height:57px; padding:35px 0 0 0; }
+.link3 a { position:relative; z-index:3; margin:0 -13px 0 0; background:url(/bundles/legosite/img/link3.png) no-repeat; width:160px; height:69px; padding:23px 0 0 0; }
+.link4 a { position:relative; z-index:4; margin:0 -5px 0 0; background:url(/bundles/legosite/img/link4.png) no-repeat; width:154px; height:57px; padding:35px 0 0 0; }
+.link5 a { position:relative; z-index:5; margin:0 -5px 0 0; background:url(/bundles/legosite/img/link5.png) no-repeat; width:148px; height:57px; padding:35px 0 0 0; }
+.link6 a { position:relative; z-index:6; margin:0 -10px 0 0; background:url(/bundles/legosite/img/link6.png) no-repeat; width:158px; height:69px; padding:23px 0 0 0; }
+.link7 a { position:relative; z-index:7; margin:0; background:url(/bundles/legosite/img/link7.png) no-repeat; width:150px; height:57px; padding:35px 0 0 0; }
 
 .lang_es .link2 a { height:69px !important; padding:23px 0 0 0 !important; }
 .lang_es .link5 a { height:69px !important; padding:23px 0 0 0 !important; }
@@ -698,7 +698,7 @@ tr.summary-details-excluded { font-style:italic; }
 .lang_ru .link6 a { height:57px; padding:35px 0 0 0; }
 .lang_ru .link7 a { height:69px; padding:23px 0 0 0; }
 
-.bg_top { position:absolute; z-index:10; margin:70px 0 0 -11px; background:url(/img/bg_top.png) no-repeat; width:1086px; height:22px; }
+.bg_top { position:absolute; z-index:10; margin:70px 0 0 -11px; background:url(/bundles/legosite/img/bg_top.png) no-repeat; width:1086px; height:22px; }
 
 
 .header .block-currency { float:right; border:none; background:none; }
@@ -719,7 +719,7 @@ tr.summary-details-excluded { font-style:italic; }
 /******** Header select *************/
 .header .jqTransformSelectWrapper{ z-index:998;}
 .header .jqTransformSelectWrapper {width:118px!important; height:14px; color:#79B9F7; background:none; line-height:13px; }
-.header .jqTransformSelectWrapper .jqTransformSelectOpen { background:url(/img/select_right2.png) left top no-repeat;width:12px;height:14px; }
+.header .jqTransformSelectWrapper .jqTransformSelectOpen { background:url(/bundles/legosite/img/select_right2.png) left top no-repeat;width:12px;height:14px; }
 .header .jqTransformSelectWrapper > div > span{margin-top:2px; padding-left:0; }
 .header .jqTransformSelectWrapper .jqTransformSelectOpen:hover {}
 .header .jqTransformSelectWrapper  ul { border:solid 1px #79B9F7; background:#679ACB; top:18px; }
@@ -731,7 +731,7 @@ tr.summary-details-excluded { font-style:italic; }
 /****************/
 
 .jqTransformSelectWrapper {
-	background:url(/img/select_left.png) left top no-repeat;
+	background:url(/bundles/legosite/img/select_left.png) left top no-repeat;
 	color:#7e7e7e;
 	font:normal 12px Arial, Helvetica, sans-serif;
 	line-height:18px;
@@ -746,7 +746,7 @@ tr.summary-details-excluded { font-style:italic; }
 .jqTransformSelectWrapper > div {padding-left:0px;}
 .jqTransformSelectWrapper > div > span{display: inline-block; margin-top:2px; cursor:pointer; padding-left:5px; width:86% !important;}
 .block-currency .jqTransformSelectWrapper > div > span{display:block; cursor:pointer; height:14px; overflow:hidden;}
-.jqTransformSelectWrapper .jqTransformSelectOpen {background:url(/img/select_right.png) left top no-repeat;width:20px;height:24px;position:absolute;top:0;right:0; cursor:pointer;}
+.jqTransformSelectWrapper .jqTransformSelectOpen {background:url(/bundles/legosite/img/select_right.png) left top no-repeat;width:20px;height:24px;position:absolute;top:0;right:0; cursor:pointer;}
 .jqTransformSelectWrapper .jqTransformSelectOpen:hover {background-position:0 bottom;}
 .header .jqTransformSelectWrapper  ul {}
 .jqTransformSelectWrapper  ul {
@@ -775,8 +775,8 @@ tr.summary-details-excluded { font-style:italic; }
 /*************Header Cart **********************/
 .header-container .top-container { clear:both; text-align:right; }
 .block-cart-header { float:right; clear:both; margin:0 -14px 0 0; }
-.cart_left { float:left; background:url(/img/cart_left.png) no-repeat; padding:26px 14px 0 19px; height:37px; }
-.cart_right { float:left; background:url(/img/cart_right.png) no-repeat; width:33px; height:63px; }
+.cart_left { float:left; background:url(/bundles/legosite/img/cart_left.png) no-repeat; padding:26px 14px 0 19px; height:37px; }
+.cart_right { float:left; background:url(/bundles/legosite/img/cart_right.png) no-repeat; width:33px; height:63px; }
 .block-cart-header .btn-edit {margin-right: 5px;}
 .block-cart-header .btn-remove, .block-cart-header .btn-edit {float: right;}
 .cart-inner{position:relative;  z-index:9999;}
@@ -792,8 +792,8 @@ tr.summary-details-excluded { font-style:italic; }
 .block-cart-header .empty{ font-size:15px; color:#fff; }
 .block-cart-header .empty .price, .block-cart-header .amount-2 .price { font-size:15px; }
 .block-cart-header button.button { overflow:visible; width:auto; border:0; background:transparent; cursor:pointer;white-space:nowrap; color:#000;  }
-.block-cart-header button.button > span {background:url(/img/button.png) no-repeat 100% -32px;}
-.block-cart-header button.button span span {background:url(/img/button.png) no-repeat 0% -32px;}
+.block-cart-header button.button > span {background:url(/bundles/legosite/img/button.png) no-repeat 100% -32px;}
+.block-cart-header button.button span span {background:url(/bundles/legosite/img/button.png) no-repeat 0% -32px;}
 .block-cart-header .actions { text-align:center;}
 .block-cart-header .mini-products-list li{ clear:both; min-height:85px; margin-left:-20px; margin-right:-20px; padding-left:20px; padding-right:20px; padding-top:20px; padding-bottom:20px;}
 .block-cart-header .mini-products-list li.even{ }
@@ -835,9 +835,9 @@ tr.summary-details-excluded { font-style:italic; }
 
 /* 1st Level */
 #nav>li { font-size:15px; }
-#nav>li>a { padding:8px 0 9px 22px; background:url(/img/nav_hover.gif) no-repeat 0 -2000px; color:#6938A6; }
+#nav>li>a { padding:8px 0 9px 22px; background:url(/bundles/legosite/img/nav_hover.gif) no-repeat 0 -2000px; color:#6938A6; }
 #nav>li.over>a,
-#nav>li.active>a { background:url(/img/nav_hover.gif) no-repeat 0 0; color:#fff; }
+#nav>li.active>a { background:url(/bundles/legosite/img/nav_hover.gif) no-repeat 0 0; color:#fff; }
 
 /* 2nd Level */
 #nav ul,
@@ -848,7 +848,7 @@ tr.summary-details-excluded { font-style:italic; }
 #nav ul ul,
 #nav ul div {  }
 
-#nav ul li { float:none; background:url(/img/nav_sub.gif) no-repeat 0 7px; padding:0 0 3px 16px; font-size:12px; }
+#nav ul li { float:none; background:url(/bundles/legosite/img/nav_sub.gif) no-repeat 0 7px; padding:0 0 3px 16px; font-size:12px; }
 #nav ul li.last {  }
 #nav ul li a { float:none; color:#FE5900 !important; }
 #nav ul li.active > a,
@@ -867,7 +867,7 @@ div.menu {float: left;}
 div.menu a{text-decoration:none; color:#504f4f;display:block;font-family: 'Open Sans', sans-serif; font-weight:bold; font-size:16px; text-transform:uppercase;padding:21px 20px 21px 20px;}
 div.menu.act, 
 div.menu:hover,
-div.menu.active { background:url(/img/tail-menu-act.gif) left 0 repeat-x #aad702; color:#fff; }
+div.menu.active { background:url(/bundles/legosite/img/tail-menu-act.gif) left 0 repeat-x #aad702; color:#fff; }
 #custommenu .popup-cat-img .img-menu {display:block;}
 #custommenu .wp-custom-menu-popup.last .popup-cat-img .img-menu {display:none;}
 
@@ -876,7 +876,7 @@ div.menu:first-child:hover,
 div.menu:first-child .parentMenu a.act{border-radius:8px 0 0px 8px;}
 
 div.menu .parentMenu a{ padding-top:22px;}
-div.menu.act:first-child {background:url(/img/tail-menu-act.gif) left 0 repeat-x #aad702; color:#fff; border-radius:8px 0 0px 8px; }
+div.menu.act:first-child {background:url(/bundles/legosite/img/tail-menu-act.gif) left 0 repeat-x #aad702; color:#fff; border-radius:8px 0 0px 8px; }
 div.menu.act a span,
 div.menu:hover a span,
 div.menu.active a span { color:#fff;}
@@ -886,7 +886,7 @@ div.menu.active a span { color:#fff;}
 div.wp-custom-menu-popup .column.last .itemMenuName.level1 .img-menu { display:block; z-index:1;}
 #custommenu .itemMenuName:hover .img-menu{ display:block;}
 
-#custommenu > div > div{background:url(/img/border-nav.gif) right 0 no-repeat; }
+#custommenu > div > div{background:url(/bundles/legosite/img/border-nav.gif) right 0 no-repeat; }
 div.menu.act .parentMenu{}
 div.menu:hover .parentMenu{ }
 
@@ -909,7 +909,7 @@ div.wp-custom-menu-popup .itemMenu:hover span{ color:#333;}
 div.wp-custom-menu-popup .itemSubMenu span{ text-transform:none; font-size:12px;color:#7e7d7d;}
 div.wp-custom-menu-popup .itemMenuName:hover span{color:#7e7d7d; font-weight:bold;}
 div.wp-custom-menu-popup .column{ margin-right:20px;}
-.itemMenuName.level2{background:url(/img/line-menu.png) 0 top repeat-x; padding:7px 0 5px 0;}
+.itemMenuName.level2{background:url(/bundles/legosite/img/line-menu.png) 0 top repeat-x; padding:7px 0 5px 0;}
 .itemMenuName.level2:first-child{ background:none;}
 div.wp-custom-menu-popup a.actParent {color: #4D4D4D;}
 div.wp-custom-menu-popup a.act {color: #A52A2A;}
@@ -934,7 +934,7 @@ div.itemSubMenu {margin-left:0px;}
 
 .block { margin:0 0 15px; }
 .block.last_block {margin-bottom:0;}
-.block .block-title {padding:17px 0 31px 23px; margin:0 0 0 -7px; background:url(/img/block_title3.png) no-repeat; }
+.block .block-title {padding:17px 0 31px 23px; margin:0 0 0 -7px; background:url(/bundles/legosite/img/block_title3.png) no-repeat; }
 .block .block-title strong { font-size:23px; font-weight:normal; font-family: 'Anton', Impact, sans-serif; text-transform:uppercase; color:#fff; }
 .block .block-title strong span { }
 .block .block-title a { text-decoration:none !important; }
@@ -975,7 +975,7 @@ div.itemSubMenu {margin-left:0px;}
 .block-currency {}
 .block-currency select {  }
 
-.block-category .block-title { background:url(/img/block_title.png) no-repeat; }
+.block-category .block-title { background:url(/bundles/legosite/img/block_title.png) no-repeat; }
 
 /******************************************************************************** Block: Layered Navigation ************************************************************************/
 .block-layered-nav { }
@@ -984,7 +984,7 @@ div.itemSubMenu {margin-left:0px;}
 .block-layered-nav dd.last ol{ border:none; margin-bottom:0; padding-bottom:20px;}
 .block-layered-nav dd li a{ text-decoration:none; color:#3984CB;}
 .block-layered-nav dd li a:hover{ color:#FE5900;}
-.block-layered-nav dd li { color:#0CA6C4; background:url(/img/block-layered-nav-marker.png) 0 6px no-repeat; padding-left:13px; margin-bottom:6px;}
+.block-layered-nav dd li { color:#0CA6C4; background:url(/bundles/legosite/img/block-layered-nav-marker.png) 0 6px no-repeat; padding-left:13px; margin-bottom:6px;}
 .block-layered-nav .currently {}
 .block-layered-nav .btn-remove { float:right; margin:0px 3px 0 2px; }
 .block-layered-nav .block-subtitle { margin-bottom:16px;}
@@ -1016,7 +1016,7 @@ div.itemSubMenu {margin-left:0px;}
 .block-cart .actions {margin-bottom:19px; padding-top:20px;}
 .block-cart .product-details { margin-left:75px; }
 .block-cart .product-details strong{ font-weight:normal; padding:0 0 0 3px;}
-.block-cart .block-title { background:url(/img/block_title2.png) no-repeat; }
+.block-cart .block-title { background:url(/bundles/legosite/img/block_title2.png) no-repeat; }
 .block-cart .block-subtitle { color:#3984CB; padding-top:0; }
 .block-cart .product-image { width:65px; }
 .block-cart .product-name a { font-size:11px; color:#3984CB; text-decoration:none; line-height:18px; text-transform:none; display:inline-block; }
@@ -1037,7 +1037,7 @@ div.itemSubMenu {margin-left:0px;}
 .block-wishlist .block-content li.item {border-bottom: 1px solid #E6E6E6;padding:20px 0 20px 0;}
 .block-wishlist .block-content li.item.last{}
 .block-wishlist .product-name{ padding-bottom:5px;}
-.block-wishlist .actions a{ font-weight:bold; color:#888787; text-decoration:underline; padding-right:13px;background:url(/img/marker-link.png) right 7px no-repeat;}
+.block-wishlist .actions a{ font-weight:bold; color:#888787; text-decoration:underline; padding-right:13px;background:url(/bundles/legosite/img/marker-link.png) right 7px no-repeat;}
 .block-wishlist .actions a:hover{ text-decoration:underline; color:#0CA6C4;}
 .block-wishlist .actions { padding-bottom:5px;}
 
@@ -1096,13 +1096,13 @@ div.itemSubMenu {margin-left:0px;}
 .jspCap{display: none;}
 .jspHorizontalBar .jspCap{float: left;}
 .jspTrack{position: relative; margin-top:-1px;}
-.jspDrag{position: relative;top: 0;left: 0;cursor: pointer; border-bottom:1px solid #ededed; border-top:1px solid #ededed;background:url(/img/drag.gif) center center no-repeat #fdfdfd;}
+.jspDrag{position: relative;top: 0;left: 0;cursor: pointer; border-bottom:1px solid #ededed; border-top:1px solid #ededed;background:url(/bundles/legosite/img/drag.gif) center center no-repeat #fdfdfd;}
 .jspHorizontalBar .jspTrack,
 .jspHorizontalBar .jspDrag{float: left;height: 100%;}
-.jspArrow{background:url(/img/scroll-top.gif) no-repeat left top;text-indent: -20000px;display: block;cursor: pointer;}
-.jspArrow.jspArrowUp{background:url(/img/scroll-top.gif) no-repeat left top;}
-.jspArrow.jspArrowUp.jspDisabled{background:url(/img/scroll-top.gif) no-repeat left top;}
-.jspArrow.jspArrowDown{background:url(/img/scroll-down.gif) no-repeat left top; height:17px!important; margin-left:-1px!important;}
+.jspArrow{background:url(/bundles/legosite/img/scroll-top.gif) no-repeat left top;text-indent: -20000px;display: block;cursor: pointer;}
+.jspArrow.jspArrowUp{background:url(/bundles/legosite/img/scroll-top.gif) no-repeat left top;}
+.jspArrow.jspArrowUp.jspDisabled{background:url(/bundles/legosite/img/scroll-top.gif) no-repeat left top;}
+.jspArrow.jspArrowDown{background:url(/bundles/legosite/img/scroll-down.gif) no-repeat left top; height:17px!important; margin-left:-1px!important;}
 .jspArrow.jspArrowDown.jspDisabled{}
 .jspArrow.jspDisabled{cursor: default;}
 .jspVerticalBar .jspArrow{height: 17px;}
@@ -1127,8 +1127,8 @@ div.itemSubMenu {margin-left:0px;}
 
 
 /********************************************************************* Block: Recently Viewed *************************************************************************************/
-.block-viewed .block-title { background:url(/img/block_title5.png) no-repeat; }
-.block-compared .block-title { background:url(/img/block_title5.png) no-repeat; }
+.block-viewed .block-title { background:url(/bundles/legosite/img/block_title5.png) no-repeat; }
+.block-compared .block-title { background:url(/bundles/legosite/img/block_title5.png) no-repeat; }
 .block-viewed {}
 .block-viewed li a,
 .block-compared li a { text-decoration:none; color:#0CA6C4; display:inline-block;}
@@ -1146,7 +1146,7 @@ div.itemSubMenu {margin-left:0px;}
 
 /********************************************************************* Block: Poll **************************************************************************************************/
 .block-poll { }
-.block-poll .block-title { background:url(/img/block_title4.png) no-repeat; }
+.block-poll .block-title { background:url(/bundles/legosite/img/block_title4.png) no-repeat; }
 .block-poll .block-subtitle{ font-size:12px; color:#FE5900; font-weight:bold; text-transform:none; line-height:18px; padding-bottom:13px;}
 .block-poll label { line-height:18px; color:#98C304;}
 .block-poll input.radio { float:left; margin:2px 0 0 0; }
@@ -1183,7 +1183,7 @@ div.itemSubMenu {margin-left:0px;}
 .block-reorder .product-name { margin-left:20px; }
 .block-reorder .product-name a{ text-decoration:none; color:#b2b2b2;}
 .block-reorder .product-name a:hover{ color:#000;}
-.block-reorder .actions a{ font-weight:bold; color:#888787; text-decoration:underline; padding-right:13px;background:url(/img/marker-link.png) right 7px no-repeat;}
+.block-reorder .actions a{ font-weight:bold; color:#888787; text-decoration:underline; padding-right:13px;background:url(/bundles/legosite/img/marker-link.png) right 7px no-repeat;}
 .block-reorder .actions a:hover{ text-decoration:underline; color:#0CA6C4;}
 .block-reorder .actions { padding-bottom:5px;}
 
@@ -1229,7 +1229,7 @@ div.itemSubMenu {margin-left:0px;}
 .products-grid .actions > span{ position:absolute; left:0; bottom:-3px;}
 .products-grid .desc.std strong{ color:#0CA6C4;}
 .products-grid .desc.std{ overflow:hidden; color:#b2b2b2; padding:5px 0;}
-.product-box-2{background:url(/img/tail-grid-bottom.gif) 0 0 repeat-x #fdfdfd; padding:16px 18px 0px 18px; margin:0 -18px; overflow:hidden; position:relative; }
+.product-box-2{background:url(/bundles/legosite/img/tail-grid-bottom.gif) 0 0 repeat-x #fdfdfd; padding:16px 18px 0px 18px; margin:0 -18px; overflow:hidden; position:relative; }
 .product-box-2 > span {  position:absolute; left:18px; bottom:-3px;}
 .products-grid .ratings .amount { float:right; padding-top:4px;}
 .products-grid .ratings .amount a{ text-decoration:none; color:#383737;}
@@ -1256,9 +1256,9 @@ div.itemSubMenu {margin-left:0px;}
 .products-list .product-name a:hover{ }
 
 .products-grid .add-to-links .link-wishlist,
-.products-list .add-to-links .link-wishlist {background:url(/img/link-wishlist.gif) 0 0 no-repeat; width:31px; height:31px; text-indent:-9999px; display:inline-block;}
+.products-list .add-to-links .link-wishlist {background:url(/bundles/legosite/img/link-wishlist.gif) 0 0 no-repeat; width:31px; height:31px; text-indent:-9999px; display:inline-block;}
 .products-grid .add-to-links .link-compare,
-.products-list .add-to-links .link-compare{background:url(/img/link-compare.gif) 0 0 no-repeat; width:31px; height:31px; text-indent:-9999px; display:inline-block;}
+.products-list .add-to-links .link-compare{background:url(/bundles/legosite/img/link-compare.gif) 0 0 no-repeat; width:31px; height:31px; text-indent:-9999px; display:inline-block;}
 
 /********************************************************************************************** View Type: List *******************************************************************************************/
 .products-list { border:1px solid #ededed; margin-bottom:20px;}
@@ -1275,7 +1275,7 @@ div.itemSubMenu {margin-left:0px;}
 .products-list .desc { clear:both; padding:10px 0 0; margin:0 0 15px; line-height:18px; font-size:12px; color:#b2b2b2; }
 .products-list .desc > p{ float:left;}
 .products-list .desc > p strong{ color:#0CA6C4;}
-.products-list .desc .link-learn { font-size:12px; font-weight:bold; color:#888787; text-decoration:underline;background:url(/img/marker-link.png) right 6px no-repeat; padding-right:12px;}
+.products-list .desc .link-learn { font-size:12px; font-weight:bold; color:#888787; text-decoration:underline;background:url(/bundles/legosite/img/marker-link.png) right 6px no-repeat; padding-right:12px;}
 .products-list .desc .link-learn:hover{ color:#0CA6C4;}
 .products-list .add-to-links {width:82px; float:left; height:31px; }
 .products-list .f-fix{ padding-bottom:30px; position:relative;}
@@ -1306,8 +1306,8 @@ div.itemSubMenu {margin-left:0px;}
 .ratings .rating-links .separator { margin:0 2px; }
 .ratings dt {}
 .ratings dd {}
-.rating-box { width:110px; height:17px; font-size:0; line-height:0; background:url(/img/bkg_rating.gif) 0 0 repeat-x; text-indent:-999em; overflow:hidden; }
-.rating-box .rating { float:left; height:17px; background:url(/img/bkg_rating.gif) 0 100% repeat-x; }
+.rating-box { width:110px; height:17px; font-size:0; line-height:0; background:url(/bundles/legosite/img/bkg_rating.gif) 0 0 repeat-x; text-indent:-999em; overflow:hidden; }
+.rating-box .rating { float:left; height:17px; background:url(/bundles/legosite/img/bkg_rating.gif) 0 100% repeat-x; }
 .ratings .rating-box { float:left; margin-right:7px; }
 .ratings .amount {}
 .email-friend.left{ float:left;}
@@ -1326,7 +1326,7 @@ div.itemSubMenu {margin-left:0px;}
 .availability.out-of-stock span { color:#d83820; }
 
 .availability-only { margin:0 0 7px; }
-.availability-only a { background:url(/img/i_availability_only_arrow.gif) 100% 0 no-repeat; cursor:pointer; padding-right:15px; }
+.availability-only a { background:url(/bundles/legosite/img/i_availability_only_arrow.gif) 100% 0 no-repeat; cursor:pointer; padding-right:15px; }
 .availability-only .expanded { background-position:100% -15px; }
 .availability-only strong {}
 
@@ -1448,7 +1448,7 @@ div.itemSubMenu {margin-left:0px;}
 .catalog-product-view .col-right{ padding-top:0;}
 .product-view h2 {font-size:12px; text-transform:uppercase; font-weight:bold; margin-bottom:10px;}
 .tt{ display:block;}
-.zoom-img{ width:31px; height:31px; overflow:hidden;background:url(/img/zoom.gif) 0 0 no-repeat; position:absolute; right:6px; bottom:6px; z-index:99}
+.zoom-img{ width:31px; height:31px; overflow:hidden;background:url(/bundles/legosite/img/zoom.gif) 0 0 no-repeat; position:absolute; right:6px; bottom:6px; z-index:99}
 .zoom-img img{opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);}
 .ie-9 .zoom-img {display:none;}
 
@@ -1477,10 +1477,10 @@ div.itemSubMenu {margin-left:0px;}
 .product-view .product-img-box .product-image-zoom { position:relative; width:298px; height:298px; overflow:hidden; z-index:9; }
 .product-view .product-img-box .product-image-zoom img { position:absolute; left:0; top:0; width:298px!important; height:298px!important; }
 .product-view .product-img-box .zoom-notice { text-align:center; }
-.product-view .product-img-box .zoom { position:relative; z-index:9; height:18px; margin:0 auto 13px; padding:0 28px; background:url(/img/slider_bg.gif) 50% 50% no-repeat; cursor:pointer; }
+.product-view .product-img-box .zoom { position:relative; z-index:9; height:18px; margin:0 auto 13px; padding:0 28px; background:url(/bundles/legosite/img/slider_bg.gif) 50% 50% no-repeat; cursor:pointer; }
 .product-view .product-img-box .zoom.disabled { -moz-opacity:.3; -webkit-opacity:.3; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";/*IE8*/ opacity:.3; }
 .product-view .product-img-box .zoom #track { position:relative; height:18px; }
-.product-view .product-img-box .zoom #handle { position:absolute; left:0; top:-1px; width:9px; height:22px; background:url(/img/magnifier_handle.gif) 0 0 no-repeat;  }
+.product-view .product-img-box .zoom #handle { position:absolute; left:0; top:-1px; width:9px; height:22px; background:url(/bundles/legosite/img/magnifier_handle.gif) 0 0 no-repeat;  }
 .product-view .product-img-box .zoom .btn-zoom-out { position:absolute; left:2px; top:0; }
 .product-view .product-img-box .zoom .btn-zoom-in { position:absolute; right:2px; top:0; }
 .product-view .product-img-box .more-views li { float:left; border:1px solid #ededed; margin:0 0 10px 10px ; }
@@ -1512,8 +1512,8 @@ div.itemSubMenu {margin-left:0px;}
 .product-view .product-shop .add-to-box .add-to-links{ border-bottom:1px solid #e6e6e6; padding-bottom:15px;}
 .product-view .product-shop .add-to-box label {font-size:11px; }
 .product-view .product-shop .add-to-links {margin-top:20px; width:100%; border-top:1px solid #e6e6e6; padding-top:15px; }
-.product-view .product-shop .add-to-links li a.link-wishlist { color:#888787; padding-left:22px;background:url(/img/wislish.png) left 0px no-repeat; }
-.product-view .product-shop .add-to-links li a.link-compare { color:#888787; padding-left:22px;background:url(/img/compare.png) left 0px no-repeat; }
+.product-view .product-shop .add-to-links li a.link-wishlist { color:#888787; padding-left:22px;background:url(/bundles/legosite/img/wislish.png) left 0px no-repeat; }
+.product-view .product-shop .add-to-links li a.link-compare { color:#888787; padding-left:22px;background:url(/bundles/legosite/img/compare.png) left 0px no-repeat; }
 .product-view .product-shop .add-to-links li a.link-wishlist:hover,
 .product-view .product-shop .add-to-links li a.link-compare:hover{ color:#0CA6C4;}
 .product-view .product-shop .add-to-links li { float:left;}
@@ -1521,14 +1521,14 @@ div.itemSubMenu {margin-left:0px;}
 .product-view .product-shop .add-to-links li:first-child{ margin-right:28px;}
 .add-to-box  .or{ display:none;}
 .row-product{ border-bottom:1px solid #e6e6e6; padding-top:15px; padding-bottom:10px; overflow:hidden; width:100%; margin-bottom:20px;}
-.row-product .no-rating{float:left; margin-right:42px;background:url(/img/marker-reviews.png) left 4px no-repeat; padding-left:22px;}
+.row-product .no-rating{float:left; margin-right:42px;background:url(/bundles/legosite/img/marker-reviews.png) left 4px no-repeat; padding-left:22px;}
 .row-product .no-rating a{ text-decoration:underline; color:#0CA6C4;}
 .row-product .no-rating a:hover{ text-decoration:underline; color:#333;}
-.row-product .email-friend {background:url(/img/marker-email.gif) left 4px no-repeat; padding-left:27px; float:right;}
+.row-product .email-friend {background:url(/bundles/legosite/img/marker-email.gif) left 4px no-repeat; padding-left:27px; float:right;}
 .row-product .email-friend a{ text-decoration:underline; color:#0CA6C4;}
 .row-product .email-friend a:hover{ text-decoration:underline; color:#333;}
 /* Product Options */
-.product-options { padding:15px 10px 15px 18px; margin:16px 0 0; border-left:1px solid #ececec;border-top:1px solid #ececec;border-right:1px solid #ececec;background:url(/img/tail-box-prod.gif) left top repeat-x #fdfdfd; }
+.product-options { padding:15px 10px 15px 18px; margin:16px 0 0; border-left:1px solid #ececec;border-top:1px solid #ececec;border-right:1px solid #ececec;background:url(/bundles/legosite/img/tail-box-prod.gif) left top repeat-x #fdfdfd; }
 .product-options dl dt{ display:block;}
 .product-options dt label { font-weight:bold; display:inline-block; color:#000000; padding-bottom:5px; }
 .product-options dt label em { float:right; color:#0CA6C4;}
@@ -1557,7 +1557,7 @@ div.itemSubMenu {margin-left:0px;}
 .product-options .jqTransformSelectWrapper ul{ width:322px!important; max-height:140px; overflow:auto;}
 
 .product-options-bottom #ajax_loader{ position:absolute; top:57px; right:20px;}
-.product-options-bottom { padding:22px 20px 10px 20px; border:1px solid #ececec; border-top:0;background:url(/img/tail-prod-box-2.gif) left top repeat-x #fbfbfb; position:relative; }
+.product-options-bottom { padding:22px 20px 10px 20px; border:1px solid #ececec; border-top:0;background:url(/bundles/legosite/img/tail-prod-box-2.gif) left top repeat-x #fbfbfb; position:relative; }
 .product-options-bottom .price-box {float:left; margin:0 25px 0 0 !important;}
 .product-options-bottom .old-price .price {display:block;}
 .product-options-bottom .price-box.map-info a {float:left; clear:left; padding:0 !important; margin-bottom:3px;}
@@ -1583,7 +1583,7 @@ div.itemSubMenu {margin-left:0px;}
 .messege-product.none-messege{ display:block;}
 .messege-product button:hover{ background-position:0 -9px; cursor:pointer;}
 .messege-product button {
-    background: url(/img/remove-popup-2.png) no-repeat  0 0;
+    background: url(/bundles/legosite/img/remove-popup-2.png) no-repeat  0 0;
     border: medium none;
     height: 9px;
     position: absolute;
@@ -1624,16 +1624,16 @@ div.itemSubMenu {margin-left:0px;}
 .box-up-sell .products-grid td { width:25%; }
 .box-up-sell .rating-box {float:none; margin:0 0 5px;}
 .box-up-sell .box-tags .product-tags {overflow:hidden; margin-bottom:25px;}
-.box-up-sell .box-tags .product-tags li {display:inline; text-transform:capitalize; background:url(/img/line-2.gif) no-repeat 100% 3px; padding:0 10px 0 0px; margin:0 10px 0 0;}
+.box-up-sell .box-tags .product-tags li {display:inline; text-transform:capitalize; background:url(/bundles/legosite/img/line-2.gif) no-repeat 100% 3px; padding:0 10px 0 0px; margin:0 10px 0 0;}
 .box-up-sell .box-tags .product-tags li.first {padding-left:0px;}
 .box-up-sell .box-tags .product-tags li.last {background:none;}
 
 .box-up-sell .jcarousel-clip {overflow:hidden;width:719px;}
-.box-up-sell .jcarousel-prev {display:block;position:absolute;height:31px;width:31px;right:64px;top:20px;background:url(/img/upsell-btn.gif) left top no-repeat;cursor:pointer;}
+.box-up-sell .jcarousel-prev {display:block;position:absolute;height:31px;width:31px;right:64px;top:20px;background:url(/bundles/legosite/img/upsell-btn.gif) left top no-repeat;cursor:pointer;}
 .box-up-sell .jcarousel-prev:hover { background-position:0 -31px; }
 .box-up-sell .jcarousel-prev.jcarousel-prev-disabled {cursor:default;}
 .box-up-sell .jcarousel-prev.jcarousel-prev-disabled:hover {cursor:default;background-position:0 0px;}
-.box-up-sell .jcarousel-next {display:block;position:absolute;height:31px;width:31px;right:28px;top:20px;background:url(/img/upsell-btn.gif) right top no-repeat;cursor:pointer;}
+.box-up-sell .jcarousel-next {display:block;position:absolute;height:31px;width:31px;right:28px;top:20px;background:url(/bundles/legosite/img/upsell-btn.gif) right top no-repeat;cursor:pointer;}
 .box-up-sell .jcarousel-next:hover { background-position:right -31px;}
 .box-up-sell .jcarousel-next.jcarousel-next-disabled {cursor:default;}
 .box-up-sell .jcarousel-next.jcarousel-next-disabled:hover{cursor:default;background-position:right 0px;}
@@ -1647,7 +1647,7 @@ div.itemSubMenu {margin-left:0px;}
 .my-tag-edit .btn-remove{ float:right; margin-left:10px;}
 .my-tag-edit{ display:inline-block;}
 #my-tags-table .add-to-links{ margin-top:10px;}
-.product-view .box-tags .form-add .input-box {  width:600px; padding-left:32px;background:url(/img/tag.png) left top no-repeat;}
+.product-view .box-tags .form-add .input-box {  width:600px; padding-left:32px;background:url(/bundles/legosite/img/tag.png) left top no-repeat;}
 .product-view .box-tags .form-add input.input-text {width:600px;border:1px solid #d4d4d4; background:#fcfcfc; }
 .product-view .box-tags .form-add p { clear:both; }
 .box-collateral.box-tags .note{ color:#0CA6C4; margin-bottom:15px;}
@@ -1695,7 +1695,7 @@ div.itemSubMenu {margin-left:0px;}
 .advanced-search-summary {margin-bottom:15px;}
 .advanced-search .form-list label {float:none;}
 .catalogsearch-advanced-index #advanced-search-list li.even label {display:block; width:100%;}
-.form-adv-search{ border:1px solid #ececec; background:url(/img/media/bg-adv-search.gif) left  bottom no-repeat #fff; padding:11px 20px 20px 20px}
+.form-adv-search{ border:1px solid #ececec; background:url(/bundles/legosite/img/media/bg-adv-search.gif) left  bottom no-repeat #fff; padding:11px 20px 20px 20px}
 .form-adv-search .fieldset{ border:none; background:none; margin:0; padding:0 0 0 0;}
 .form-adv-search .fieldset h2{ font-size:12px; text-transform:uppercase; color:#0CA6C4; padding:8px 0 5px 0;}
 .catalogsearch-advanced-index .col-main{ padding-top:17px;}
@@ -1731,7 +1731,7 @@ div.itemSubMenu {margin-left:0px;}
     -o-transition-delay: 0.5s;
 	}
 .contact-main.show{ width:350px;  position:fixed; right:0px; top:164px; background:#E54D1B; border-radius:0px 0 0 4px; z-index:999;}
-.contact-main .validation-advice{ color:#fff;background: url(/img/validation_advice_bg-2.gif) no-repeat  0px 3px;}
+.contact-main .validation-advice{ color:#fff;background: url(/bundles/legosite/img/validation_advice_bg-2.gif) no-repeat  0px 3px;}
 .contact-main #contactForm{width:290px; border:none; padding:30px 30px 30px 30px; }
 .contact-main #contactForm .fieldset .legend { font-size:12px; text-transform:uppercase; color:#fff; border:none; font-family:Arial, Helvetica, sans-serif; text-align:left; margin-bottom:0;}
 .contact-main .form-list label{ color:#fff;} 
@@ -1773,7 +1773,7 @@ div.itemSubMenu {margin-left:0px;}
 .account-login-home.show.show2{right:-247px;}
 .account-login-home .messages{ display:none;}
 .account-login-home .form-list .input-box {clear: both;display: block;width:187px;}
-.account-login-home .validation-advice{ color:#fff;background: url(/img/validation_advice_bg-2.gif) no-repeat  0px 3px;}
+.account-login-home .validation-advice{ color:#fff;background: url(/bundles/legosite/img/validation_advice_bg-2.gif) no-repeat  0px 3px;}
 .account-login-home .col2-set {width:191px;}
 .account-login-home .col2-set h2{ font-size:12px; text-transform:uppercase; color:#0CA6C4;}
 .account-login-home .col2-set p{ color:#a0a0a0;}
@@ -1783,7 +1783,7 @@ div.itemSubMenu {margin-left:0px;}
 	font-weight:bold; 
 	color:#fff;
 	padding:10px 25px 10px 10px;
-	background:url(/img/marker-login.png) no-repeat 90% 10px #313131; 
+	background:url(/bundles/legosite/img/marker-login.png) no-repeat 90% 10px #313131; 
 	border-radius:4px 0px 0px 4px;
 	display:inline-block; 
 	position:absolute; 
@@ -1831,7 +1831,7 @@ div.itemSubMenu {margin-left:0px;}
 #contactForm .buttons-set button.button {float:left;}
 #contactForm .buttons-set{ margin:0 0 0 0; padding:14px 0 0 0; }
 #contactForm .buttons-set p.required {color: #0CA6C4;font-size: 12px; margin: 0 0 0px;float:left; padding-left:50px; padding-top:5px;}
-#FME-contact-form{ position:fixed; top:150px; right:-145px; display:block; width:218px; height:74px;background:url(/img/contact_btn.png) left  top  no-repeat; text-indent:-9999px; margin-right:0px; z-index:998}
+#FME-contact-form{ position:fixed; top:150px; right:-145px; display:block; width:218px; height:74px;background:url(/bundles/legosite/img/contact_btn.png) left  top  no-repeat; text-indent:-9999px; margin-right:0px; z-index:998}
 .contact-btn a{ display:none;}
 .contact-btn li{ padding:0; margin:0;}
 
@@ -1845,9 +1845,9 @@ div.itemSubMenu {margin-left:0px;}
 .cms-about-magento-demo-store .about-col-2,
 .cms-about-magento-demo-store .about-col-3 { float:left; width:270px; padding:214px 29px 27px 29px;}
 
-.cms-about-magento-demo-store .about-col-1{ margin-right:20px;background:url(/img/media/about-11.png) left  top  no-repeat #f9f9f9; position:relative; z-index:10}
-.cms-about-magento-demo-store .about-col-2{ margin-right:20px;background:url(/img/media/about-22.png) left  top  no-repeat #f9f9f9; position:relative;}
-.cms-about-magento-demo-store .about-col-3{ background:url(/img/media/about-33.png) left  top  no-repeat #f9f9f9;}
+.cms-about-magento-demo-store .about-col-1{ margin-right:20px;background:url(/bundles/legosite/img/media/about-11.png) left  top  no-repeat #f9f9f9; position:relative; z-index:10}
+.cms-about-magento-demo-store .about-col-2{ margin-right:20px;background:url(/bundles/legosite/img/media/about-22.png) left  top  no-repeat #f9f9f9; position:relative;}
+.cms-about-magento-demo-store .about-col-3{ background:url(/bundles/legosite/img/media/about-33.png) left  top  no-repeat #f9f9f9;}
 
 .cms-about-magento-demo-store .about-col-1 h3,
 .cms-about-magento-demo-store .about-col-2 h3,
@@ -1856,7 +1856,7 @@ div.itemSubMenu {margin-left:0px;}
 .cms-about-magento-demo-store .about-col-2 p,
 .cms-about-magento-demo-store .about-col-3 p{ font-size:12px;color:#0CA6C4; line-height:18px; color:#7c7c7c; margin-bottom:0;}
 .cms-about-magento-demo-store .about-col-1 span,
-.cms-about-magento-demo-store .about-col-2 span{ position:absolute; top:64px; right:-38px; width:54px; height:72px;background:url(/img/arrow-about.png) left  top  no-repeat;}
+.cms-about-magento-demo-store .about-col-2 span{ position:absolute; top:64px; right:-38px; width:54px; height:72px;background:url(/bundles/legosite/img/arrow-about.png) left  top  no-repeat;}
 
 .cms-about-magento-demo-store .about-col-4,
 .cms-about-magento-demo-store .about-col-5,
@@ -1872,11 +1872,11 @@ div.itemSubMenu {margin-left:0px;}
 .cms-about-magento-demo-store .about-col-5 p,
 .cms-about-magento-demo-store .about-col-6 p{ font-size:12px;color:#0CA6C4; line-height:18px; color:#7c7c7c; margin-bottom:0;}
 .cms-about-magento-demo-store .about-col-4 ul { list-style:none; padding:25px 0 12px 49px; margin:0 0 0 0;}
-.cms-about-magento-demo-store .about-col-4 ul li{ list-style:none; font-size:12px; font-style:italic; color:#0CA6C4; padding:0 0 9px 26px;background:url(/img/marker-list-about.png) left 3px no-repeat;}
+.cms-about-magento-demo-store .about-col-4 ul li{ list-style:none; font-size:12px; font-style:italic; color:#0CA6C4; padding:0 0 9px 26px;background:url(/bundles/legosite/img/marker-list-about.png) left 3px no-repeat;}
 .cms-about-magento-demo-store .about-col-5 ul { list-style:none; padding:25px 0 12px 49px; margin:0 0 0 0;}
-.cms-about-magento-demo-store .about-col-5 ul li{ list-style:none; font-size:12px; font-style:italic; color:#0CA6C4; padding:0 0 9px 26px;background:url(/img/marker-list-about-2.png) left 1px no-repeat;}
+.cms-about-magento-demo-store .about-col-5 ul li{ list-style:none; font-size:12px; font-style:italic; color:#0CA6C4; padding:0 0 9px 26px;background:url(/bundles/legosite/img/marker-list-about-2.png) left 1px no-repeat;}
 .cms-about-magento-demo-store .about-col-6 ul { list-style:none; padding:25px 0 12px 49px; margin:0 0 0 0;}
-.cms-about-magento-demo-store .about-col-6 ul li{ list-style:none; font-size:12px; font-style:italic; color:#373737; padding:0 0 9px 26px;background:url(/img/marker-list.png) left 3px no-repeat;}
+.cms-about-magento-demo-store .about-col-6 ul li{ list-style:none; font-size:12px; font-style:italic; color:#373737; padding:0 0 9px 26px;background:url(/bundles/legosite/img/marker-list.png) left 3px no-repeat;}
 
 .cms-about-magento-demo-store .about-col-7 h4{ font-size:12px; text-transform:uppercase; color:#383737; padding-bottom:16px; margin-bottom:14px; border-bottom:1px solid #e6e6e6;}
 .cms-about-magento-demo-store .about-col-7 p{ font-size:12px;color:#0CA6C4; line-height:18px; color:#7c7c7c; margin-bottom:0;}
@@ -1885,31 +1885,31 @@ div.itemSubMenu {margin-left:0px;}
 /* customer-service */
 .custom-servis-ul{ list-style:none; padding:0!important; margin:0!important;}
 .custom-servis-ul ul{list-style:none; padding:0!important; margin:0!important;}
-.custom-servis-ul ul li{ padding:5px 5px 5px 5px; margin-bottom:3px;background:url(/img/marker-list.png) left 7px no-repeat; padding-left:23px; color:#7c7c7c; font-weight:bold;}
+.custom-servis-ul ul li{ padding:5px 5px 5px 5px; margin-bottom:3px;background:url(/bundles/legosite/img/marker-list.png) left 7px no-repeat; padding-left:23px; color:#7c7c7c; font-weight:bold;}
 .custom-servis-ul li { background:#f9f9f9; list-style:none; margin-bottom:20px; padding:20px 20px 16px 167px;}
-.custom-servis-ul li.item-1{background:url(/img/media/custom-img.png) 29px  20px no-repeat #f9f9f9;} 
-.custom-servis-ul li.item-2{background:url(/img/media/custom-img1.png) 29px  25px no-repeat #f9f9f9;} 
-.custom-servis-ul li.item-3{background:url(/img/media/custom-img2.png) 29px  26px no-repeat #f9f9f9; } 
-.custom-servis-ul li.item-4{background:url(/img/media/custom-img3.png) 29px  24px no-repeat #f9f9f9;padding-bottom:30px;} 
-.custom-servis-ul li.item-5{background:url(/img/media/custom-img4.png) 24px  32px no-repeat #f9f9f9;padding-bottom:30px;}
-.custom-servis-ul li.item-6{background:url(/img/media/custom-img5.png) 25px  27px no-repeat #f9f9f9;padding-bottom:30px;} 
-.custom-servis-ul li.item-7{background:url(/img/media/custom-img6.png) 27px  27px no-repeat #f9f9f9; padding-bottom:30px; margin-bottom:0;} 
+.custom-servis-ul li.item-1{background:url(/bundles/legosite/img/media/custom-img.png) 29px  20px no-repeat #f9f9f9;} 
+.custom-servis-ul li.item-2{background:url(/bundles/legosite/img/media/custom-img1.png) 29px  25px no-repeat #f9f9f9;} 
+.custom-servis-ul li.item-3{background:url(/bundles/legosite/img/media/custom-img2.png) 29px  26px no-repeat #f9f9f9; } 
+.custom-servis-ul li.item-4{background:url(/bundles/legosite/img/media/custom-img3.png) 29px  24px no-repeat #f9f9f9;padding-bottom:30px;} 
+.custom-servis-ul li.item-5{background:url(/bundles/legosite/img/media/custom-img4.png) 24px  32px no-repeat #f9f9f9;padding-bottom:30px;}
+.custom-servis-ul li.item-6{background:url(/bundles/legosite/img/media/custom-img5.png) 25px  27px no-repeat #f9f9f9;padding-bottom:30px;} 
+.custom-servis-ul li.item-7{background:url(/bundles/legosite/img/media/custom-img6.png) 27px  27px no-repeat #f9f9f9; padding-bottom:30px; margin-bottom:0;} 
 .custom-servis-ul li h3{ font-size:16px; text-transform:uppercase; font-weight:600; color:#0CA6C4;font-family: 'Open Sans', sans-serif; padding-top:8px; padding-bottom:3px;}
 .custom-servis-ul li p{ font-size:12px; color:#7c7c7c; line-height:18px; margin-bottom:10px;}
 /* Sitemap */
 .page-sitemap .links { text-align:right; margin:0 8px -37px 0; }
-.page-sitemap .links a { text-decoration:none; position:relative; text-transform:uppercase; color:#323232;background:url(/img/btn-sitemap.gif) left  top repeat-x; padding:9px 11px 9px 11px;  }
+.page-sitemap .links a { text-decoration:none; position:relative; text-transform:uppercase; color:#323232;background:url(/bundles/legosite/img/btn-sitemap.gif) left  top repeat-x; padding:9px 11px 9px 11px;  }
 .page-sitemap .links a:hover{ background:#353535; color:#fff;}
-.page-sitemap .links a span{background:url(/img/btn-sitemap-marker.png) right 5px no-repeat; display:inline-block; padding-right:29px;}
-.page-sitemap .links a:hover span{background:url(/img/btn-sitemap-marker.png) right -12px no-repeat;}
+.page-sitemap .links a span{background:url(/bundles/legosite/img/btn-sitemap-marker.png) right 5px no-repeat; display:inline-block; padding-right:29px;}
+.page-sitemap .links a:hover span{background:url(/bundles/legosite/img/btn-sitemap-marker.png) right -12px no-repeat;}
 .page-sitemap .links a:hover { text-decoration:underline; }
 .page-sitemap .sitemap { margin:12px 4px 30px 4px; display:inline-block;  }
 .page-sitemap .sitemap a {}
 .page-sitemap .page-title {}
 .page-sitemap .sitemap li { margin:3px 0; }
-.page-sitemap .sitemap li a{text-decoration:none; color:#0CA6C4; font-size:12px; text-transform:uppercase; font-weight:normal;background:url(/img/marker-sitemap.png) left  4px  no-repeat; padding-left:14px;}
+.page-sitemap .sitemap li a{text-decoration:none; color:#0CA6C4; font-size:12px; text-transform:uppercase; font-weight:normal;background:url(/bundles/legosite/img/marker-sitemap.png) left  4px  no-repeat; padding-left:14px;}
 .page-sitemap .sitemap li.level-0 { margin:10px 0 0; font-weight:bold; }
-.page-sitemap .sitemap li.level-0 a { text-decoration:none; color:#0CA6C4; font-size:12px; text-transform:uppercase; font-weight:normal;background:url(/img/marker-sitemap.png) left  4px  no-repeat; padding-left:14px;}
+.page-sitemap .sitemap li.level-0 a { text-decoration:none; color:#0CA6C4; font-size:12px; text-transform:uppercase; font-weight:normal;background:url(/bundles/legosite/img/marker-sitemap.png) left  4px  no-repeat; padding-left:14px;}
 .page-sitemap .sitemap li {font-size:12px; line-height:18px;}
 .page-sitemap .sitemap li.level-1{ padding-left:45px!important; margin-bottom:10px; margin-top:10px; background:none;}
 .page-sitemap .sitemap li.level-1 a{ color:#474646;background:none; padding-left:0; text-transform:none;}
@@ -1925,9 +1925,9 @@ div.itemSubMenu {margin-left:0px;}
 .page-sitemap .sitemap li a:hover {text-decoration:none; color:#7f7f7f;}
 .page-sitemap .sitemap li a {display:inline-block; text-decoration:none;}
 
-.page-sitemap .pager{ border:1px solid #ececec; background:url(/img/tail-pager-sitemap.gif) left bottom repeat-x #fff;margin:5px 0;padding:10px 9px 11px 19px;}
+.page-sitemap .pager{ border:1px solid #ececec; background:url(/bundles/legosite/img/tail-pager-sitemap.gif) left bottom repeat-x #fff;margin:5px 0;padding:10px 9px 11px 19px;}
 /* RSS */
-.rss-title h1 { background:url(/img/i_rss-big.png) 0 4px no-repeat; padding-left:27px; }
+.rss-title h1 { background:url(/bundles/legosite/img/i_rss-big.png) 0 4px no-repeat; padding-left:27px; }
 .rss-table .link-rss { display:block; line-height:1.35; background-position:0 2px; }
 /* ======================================================================================= */
 .form-alt li {overflow:hidden; margin-bottom:10px;}
@@ -1937,13 +1937,13 @@ div.itemSubMenu {margin-left:0px;}
 .cart .data-table th,
 .cart .data-table td {border-color:#ececec; line-height:normal; color:#000000; padding:10px 20px 10px 20px;}
 .cart .data-table td input{ border:1px solid #d4d4d4; text-align:center; color:#7e7e7e; font-size:12px; width:40px!important;}
-.cart .data-table tfoot tr.last td.last{background:url(/img/row-last.gif) left top repeat-x; border-radius:0 0 4px 4px; overflow:hidden;}
+.cart .data-table tfoot tr.last td.last{background:url(/bundles/legosite/img/row-last.gif) left top repeat-x; border-radius:0 0 4px 4px; overflow:hidden;}
 .cart .data-table td {padding:19px; vertical-align:middle;}
 .link-wishlist.use-ajax{ text-decoration:none; color:#333;}
 .link-wishlist.use-ajax:hover{ color:#96be02;}
 .cart .data-table td .product-name a { text-decoration:none; font-size:12px; text-transform:uppercase; color:#2f2f2f;}
 .cart .data-table td .product-name a:hover { color:#0CA6C4;}
-.cart .data-table td.a-center.edit a{ text-decoration:none;background:url(/img/edit.png) 50% top  no-repeat; padding-top:39px; font-size:12px; display:inline-block; margin-top:10px; color:#b2b2b2; padding-left:5px; padding-right:10px;}
+.cart .data-table td.a-center.edit a{ text-decoration:none;background:url(/bundles/legosite/img/edit.png) 50% top  no-repeat; padding-top:39px; font-size:12px; display:inline-block; margin-top:10px; color:#b2b2b2; padding-left:5px; padding-right:10px;}
 .cart .data-table td.a-center.edit a:hover{ color:#000; background-position:50% -68px;}
 .cart .data-table .nobr {display:block;color:#000000;}
 .cart .data-table thead .first.last{ background:#fff;}
@@ -1982,9 +1982,9 @@ div.itemSubMenu {margin-left:0px;}
 
 .cart .data-table tfoot .btn-continue span span {padding-right:23px;  padding-left:0;}
 
-.cart .data-table tfoot .btn-continue span span{background:url(/img/marker-btn.png) right 11px no-repeat;}
-.cart .data-table tfoot .btn-update span span{background:url(/img/btn-update.png) left 10px no-repeat; }
-.cart .data-table tfoot .btn-empty span span{background:url(/img/btn-empty.png) left 7px no-repeat; }
+.cart .data-table tfoot .btn-continue span span{background:url(/bundles/legosite/img/marker-btn.png) right 11px no-repeat;}
+.cart .data-table tfoot .btn-update span span{background:url(/bundles/legosite/img/btn-update.png) left 10px no-repeat; }
+.cart .data-table tfoot .btn-empty span span{background:url(/bundles/legosite/img/btn-empty.png) left 7px no-repeat; }
 
 .cart .data-table tfoot .btn-continue:hover > span,
 .cart .data-table tfoot .btn-update:hover > span,
@@ -2001,7 +2001,7 @@ div.itemSubMenu {margin-left:0px;}
 
 
 #shopping-cart-table{ }
-.cart .data-table tr.first {background:url(/img/tail-row-cart.gif) left  top  repeat-x;}
+.cart .data-table tr.first {background:url(/bundles/legosite/img/tail-row-cart.gif) left  top  repeat-x;}
 .cart .data-table tr{ background:#fcfcfc;}
 /* Checkout Types */
 .cart .checkout-types { float:right; text-align:right; }
@@ -2040,8 +2040,8 @@ div.itemSubMenu {margin-left:0px;}
 .cart .crosssell .add-to-links li{ float:left; margin-right:10px;}
 #shopping-cart-table .product-image {display:inline-block;}
 .cart-table .price { font-weight:bold; color:#0CA6C4;}
-.cart .crosssell .link-wishlist {width:15px; height:14px; text-indent:-9999px;background:url(/img/cart-wislish.png) left top no-repeat; display:inline-block;}
-.cart .crosssell .link-compare {width:16px; height:14px; text-indent:-9999px;background:url(/img/cart-compare.png) left top no-repeat; display:inline-block;}
+.cart .crosssell .link-wishlist {width:15px; height:14px; text-indent:-9999px;background:url(/bundles/legosite/img/cart-wislish.png) left top no-repeat; display:inline-block;}
+.cart .crosssell .link-compare {width:16px; height:14px; text-indent:-9999px;background:url(/bundles/legosite/img/cart-compare.png) left top no-repeat; display:inline-block;}
 /* Discount Codes & Estimate Shipping and Tax Boxes */
 .cart .discount {margin-bottom:19px;}
 .cart .discount,
@@ -2084,7 +2084,7 @@ div.itemSubMenu {margin-left:0px;}
 .checkout-types li {padding-bottom:15px;}
 .checkout-types li a {color:#fff;}
 .checkout-types li a:hover{ text-decoration:underline;}
-.cart .totals .checkout-types {text-align:center; float:none; padding:30px 20px 30px 20px;background:url(/img/tail-checout-ul.gif) left top repeat-x #535252;}
+.cart .totals .checkout-types {text-align:center; float:none; padding:30px 20px 30px 20px;background:url(/bundles/legosite/img/tail-checout-ul.gif) left top repeat-x #535252;}
 /* Options Tool Tip */
 .item-options dt { font-weight:bold; font-style:italic; }
 .item-options dd { padding-left:10px; }
@@ -2133,7 +2133,7 @@ div.itemSubMenu {margin-left:0px;}
 /* Tooltip */
 .tool-tip { border:1px solid #ddd; background-color:#f6f6f6; padding:5px; position:absolute; z-index:9999; }
 .tool-tip .btn-close { text-align:right; }
-.tool-tip .btn-close a { display:block; margin:0 0 0 auto; width:15px; height:15px; background:url(/img/btn_window_close.gif) 100% 0 no-repeat; text-align:left; text-indent:-999em; overflow:hidden; }
+.tool-tip .btn-close a { display:block; margin:0 0 0 auto; width:15px; height:15px; background:url(/bundles/legosite/img/btn_window_close.gif) 100% 0 no-repeat; text-align:left; text-indent:-999em; overflow:hidden; }
 .tool-tip .tool-tip-content { padding:5px; }
 
 /* Gift Messages */
@@ -2143,7 +2143,7 @@ div.itemSubMenu {margin-left:0px;}
 #shipping-method-buttons-container{ padding:10px 0 0 0;}
 #shipping-method-buttons-container .back-link a{ color:#000;}
 #shipping-method-buttons-container .back-link a:hover{ color:#0CA6C4;}
-.gift-messages-form { border:1px solid #ddd; background-color:#f5f5f5; padding:10px 20px 20px 20px; background:url(/img/tail-chech.gif) left top repeat-x #fbfbfb; }
+.gift-messages-form { border:1px solid #ddd; background-color:#f5f5f5; padding:10px 20px 20px 20px; background:url(/bundles/legosite/img/tail-chech.gif) left top repeat-x #fbfbfb; }
 .gift-messages-form { position:relative; }
 .gift-messages-form label { float:none !important; position:static !important; color:#000; font-weight:bold;}
 .gift-messages-form h4 {font-size:12px; text-transform:uppercase; color:#0CA6C4; padding-top:10px;}
@@ -2159,7 +2159,7 @@ div.itemSubMenu {margin-left:0px;}
 .gift-messages-form  .inner-box .form-list li.wide textarea {max-width:333px;}
 #allow-gift-messages-for-order-container .field{ margin-bottom:10px;}
 
-.gift-message-link { display:block; background:url(/img/bkg_collapse.gif) 0 4px no-repeat; padding-left:20px; }
+.gift-message-link { display:block; background:url(/bundles/legosite/img/bkg_collapse.gif) 0 4px no-repeat; padding-left:20px; }
 .gift-message-link.expanded { background-position:0 -53px; }
 .gift-message-row {}
 .gift-message-row .btn-close { float:right; }
@@ -2203,7 +2203,7 @@ div.itemSubMenu {margin-left:0px;}
 .opc p {margin-bottom:5px;}
 .opc .buttons-set.disabled button.button { display:none; }
 .opc .buttons-set .please-wait { height:21px; line-height:21px; font-size:12px; color:#000; }
-.opc .step-title { padding:11px 25px 14px; text-align:right;background:url(/img/tail-check-li.gif) left  bottom  repeat-x #fff; }
+.opc .step-title { padding:11px 25px 14px; text-align:right;background:url(/bundles/legosite/img/tail-check-li.gif) left  bottom  repeat-x #fff; }
 .opc .step-title .number { float:left; line-height:18px; font-weight:bold; margin-right:10px;  border:1px solid #313131; color:#ececec; height:18px; width:18px; text-align:center; background:#313131; }
 .opc .step-title h2 { float:left; font-weight:bold; color:#000000; font-size:12px; margin-bottom:0; padding-top:3px; }
 .opc .step-title a { display:none; float:right; }
@@ -2216,25 +2216,25 @@ div.itemSubMenu {margin-left:0px;}
 #checkout-review-table .price{ color:#0CA6C4; font-weight:bold;}
 #checkout-review-table th{ border:1px solid #ececec;}
 #checkout-review-table-wrapper { overflow:hidden;}
-#checkout-review-table{background:url(/img/tail-table.gif) left top repeat-x #fbfbfb;}
+#checkout-review-table{background:url(/bundles/legosite/img/tail-table.gif) left top repeat-x #fbfbfb;}
 #checkout-review-table tfoot td{ font-weight:bold; color:#000000;}
-#checkout-review-table  tbody .first{background:url(/img/line-shadow.png) left top repeat-x;}
-#checkout-review-table  tbody tr.last{background:url(/img/line-shadow.png) left top repeat-x;}
+#checkout-review-table  tbody .first{background:url(/bundles/legosite/img/line-shadow.png) left top repeat-x;}
+#checkout-review-table  tbody tr.last{background:url(/bundles/legosite/img/line-shadow.png) left top repeat-x;}
 #review-buttons-container{ padding:20px 0 0 0; margin:0 0 0 0;}
 #review-buttons-container .f-left a{ color:#0CA6C4;}
 #review-buttons-container .f-left a:hover{ color:#000;}
 /*.opc .allow .step-title a { display:block; }*/
-#co-shipping-form{ border:1px solid #ececec; background:url(/img/tail-chech.gif) left top repeat-x #fbfbfb; padding:15px 20px 20px 20px; display:block;}
+#co-shipping-form{ border:1px solid #ececec; background:url(/bundles/legosite/img/tail-chech.gif) left top repeat-x #fbfbfb; padding:15px 20px 20px 20px; display:block;}
 
 .opc .active { }
-.opc .active .step-title { cursor:default; background:url(/img/tail-check-l-act.gif) left  top  repeat-x #333333; }
+.opc .active .step-title { cursor:default; background:url(/bundles/legosite/img/tail-check-l-act.gif) left  top  repeat-x #333333; }
 .opc .active .step-title .number { background:#fcfcfc; border:1px solid #fcfcfc; color:#2d2d2d;}
 .opc .active .step-title h2 { color:#fff;}
 
 #checkout-step-login .col2-set{ width:679px;}
 /*.opc .active .step-title a { display:none; }*/
 #checkout-step-login h3{ font-size:12px; text-transform:uppercase; font-weight:normal; color:#0CA6C4;}
-#checkout-step-login .col2-set{ border:1px solid #ececec; background:url(/img/tail-chech.gif) left top repeat-x #fbfbfb; padding:20px;}
+#checkout-step-login .col2-set{ border:1px solid #ececec; background:url(/bundles/legosite/img/tail-chech.gif) left top repeat-x #fbfbfb; padding:20px;}
 #checkout-step-login .col2-set > .col-1 {}
 #checkout-step-login .col2-set > .col-1 h4{font-size:12px; text-transform:uppercase; font-weight:normal; color:#0CA6C4;}
 #checkout-step-login .col2-set .col-2  h4{font-size:12px; text-transform:none; font-weight:normal; color:#7b7b7b;}
@@ -2245,7 +2245,7 @@ div.itemSubMenu {margin-left:0px;}
 #checkout-step-login .col2-set .col-2 .buttons-set .f-left{ font-weight:bold; color:#7f7f7f;}
 #checkout-step-login .col2-set .col-2 .buttons-set .f-left:hover{ color:#0CA6C4;}
 #checkout-step-login .form-list li.control input.radio, #checkout-step-login .form-list li.control input.checkbox {margin-right: 6px; margin-top:-3px;}
-#co-billing-form > fieldset{ border:1px solid #ececec; background:url(/img/tail-chech.gif) left top repeat-x #fbfbfb; padding:15px 20px 20px 20px;}
+#co-billing-form > fieldset{ border:1px solid #ececec; background:url(/bundles/legosite/img/tail-chech.gif) left top repeat-x #fbfbfb; padding:15px 20px 20px 20px;}
 .opc .step { padding:20px; position:relative; background:#fbfbfb; }
 .opc .step .tool-tip { right:20px; top:20px!important; }
 .opc .order-review {}
@@ -2277,16 +2277,16 @@ div.itemSubMenu {margin-left:0px;}
 .checkout-progress { padding:0 0px; margin:10px 0 20px 34px; }
 .checkout-progress li { float:left; width:201px; text-align:center; color:#fff; font-weight:bold; padding:10px 0px 11px 0px; }
 .checkout-progress li.last {width:190px;}
-.checkout-progress li.first{ margin-right:-10px; position:relative; z-index:12;background:url(/img/multi-33.png) left top no-repeat;}
-.checkout-progress li.first.active {  color:#fff;background:url(/img/multi-act.png) left top no-repeat; }
+.checkout-progress li.first{ margin-right:-10px; position:relative; z-index:12;background:url(/bundles/legosite/img/multi-33.png) left top no-repeat;}
+.checkout-progress li.first.active {  color:#fff;background:url(/bundles/legosite/img/multi-act.png) left top no-repeat; }
 .checkout-progress li.two.active,
 .checkout-progress li.tree.active,
-.checkout-progress li.four.active{color:#fff;background:url(/img/multi-act-main.png) left top no-repeat; }
-.checkout-progress li.last.active{color:#fff;background:url(/img/multi-act-last.png) left top no-repeat; }
-.checkout-progress li.last{background:url(/img/multi-last.png) left top no-repeat;}
-.checkout-progress li.two{background:url(/img/multi-2.png) left top no-repeat; margin-right:-10px; z-index:11; position:relative;}
-.checkout-progress li.tree{background:url(/img/multi-3.png) left top no-repeat;margin-right:-10px; z-index:10; position:relative;}
-.checkout-progress li.four{background:url(/img/multi-2.png) left top no-repeat; margin-right:-10px; z-index:9; position:relative;}
+.checkout-progress li.four.active{color:#fff;background:url(/bundles/legosite/img/multi-act-main.png) left top no-repeat; }
+.checkout-progress li.last.active{color:#fff;background:url(/bundles/legosite/img/multi-act-last.png) left top no-repeat; }
+.checkout-progress li.last{background:url(/bundles/legosite/img/multi-last.png) left top no-repeat;}
+.checkout-progress li.two{background:url(/bundles/legosite/img/multi-2.png) left top no-repeat; margin-right:-10px; z-index:11; position:relative;}
+.checkout-progress li.tree{background:url(/bundles/legosite/img/multi-3.png) left top no-repeat;margin-right:-10px; z-index:10; position:relative;}
+.checkout-progress li.four{background:url(/bundles/legosite/img/multi-2.png) left top no-repeat; margin-right:-10px; z-index:9; position:relative;}
 .multiple-checkout { position:relative;}
 .multiple-checkout .sp-methods .input-box .v-fix:first-child {padding-right:25px;}
 .multiple-checkout .col2-set {width:auto;}
@@ -2315,10 +2315,10 @@ div.itemSubMenu {margin-left:0px;}
 .account-login #login-form .col2-set{}
 .account-login .new-users .buttons-set{ padding-left:0;}
 .account-login .new-users .buttons-set button.button {float:left;}
-.account-login .new-users { border:1px solid #ececec;  padding:18px 20px 20px 20px; width:460px; background:url(/img/media/bg-login.gif) no-repeat left bottom #ffffff; min-height:260px;}
+.account-login .new-users { border:1px solid #ececec;  padding:18px 20px 20px 20px; width:460px; background:url(/bundles/legosite/img/media/bg-login.gif) no-repeat left bottom #ffffff; min-height:260px;}
 .account-login .new-users h2{ padding:0 0 15px 0; border-bottom:1px solid #e6e6e6; font-size:12px; text-transform:uppercase; color:#0CA6C4;}
 .account-login .new-users p{ font-size:12px; color:#7f7f7f; line-height:18px; padding:13px 0 12px 0;}
-.account-login .registered-users {border:1px solid #ececec; padding:18px 20px 20px 20px; width:460px; background:url(/img/media/bg-login-2.gif) no-repeat left bottom #ffffff; min-height:260px;}
+.account-login .registered-users {border:1px solid #ececec; padding:18px 20px 20px 20px; width:460px; background:url(/bundles/legosite/img/media/bg-login-2.gif) no-repeat left bottom #ffffff; min-height:260px;}
 .account-login .registered-users h2{ padding:0 0 15px 0; border-bottom:1px solid #e6e6e6; font-size:12px; text-transform:uppercase; color:#0CA6C4;}
 .account-login .registered-users  p{ font-size:12px; color:#7f7f7f; line-height:18px; padding:13px 0 12px 0;}
 .account-login .registered-users .form-list input.input-text {width:452px;}
@@ -2353,7 +2353,7 @@ div.itemSubMenu {margin-left:0px;}
 }
 
 /* Remember Me Popup ===================================================================== */
-.window-overlay { background:url(/img/window_overlay.png) repeat; background:rgba(0, 0, 0, 0.35); position:absolute; top:0; left:0; height:100%; width:100%; z-index:990; }
+.window-overlay { background:url(/bundles/legosite/img/window_overlay.png) repeat; background:rgba(0, 0, 0, 0.35); position:absolute; top:0; left:0; height:100%; width:100%; z-index:990; }
 .remember-me label {}
 .remember-me-popup {}
 .remember-me-popup h3 {}
@@ -2442,7 +2442,7 @@ div.itemSubMenu {margin-left:0px;}
 .dashboard .box-tags .details { margin-left:30px; }
 
 /********** Dashboard > */
-.block-order-return{ border:1px solid #ececec; padding:13px 18px 20px 18px; margin-top:26px;background:url(/img/media/bg-return.gif) no-repeat left bottom #fff; min-height:345px; overflow:hidden;}
+.block-order-return{ border:1px solid #ececec; padding:13px 18px 20px 18px; margin-top:26px;background:url(/bundles/legosite/img/media/bg-return.gif) no-repeat left bottom #fff; min-height:345px; overflow:hidden;}
 .block-order-return .page-title { background:none; padding:0; }
 .block-order-return label{ color:#000000; font-weight:bold; display:inline-block; padding-bottom:5px;}
 .block-order-return label em{ color:#0CA6C4;}
@@ -2533,10 +2533,10 @@ div.itemSubMenu {margin-left:0px;}
 #product_comparison .product-shop-row td{ text-align:center; padding:18px 30px 30px 30px;}
 .catalog-product-compare-index { position:absolute;}
 .catalog-product-compare-index .link-print:hover span{}
-.catalog-product-compare-index .link-print{background:url(/img/tail-btn-compare.gif) left top repeat-x; color:#323232; padding:9px 20px 8px 17px; }
+.catalog-product-compare-index .link-print{background:url(/bundles/legosite/img/tail-btn-compare.gif) left top repeat-x; color:#323232; padding:9px 20px 8px 17px; }
 .catalog-product-compare-index .link-print:hover{ background-position:0 -31px;}
-.catalog-product-compare-index .link-print span {background:url(/img/btn-print.png) left 0px no-repeat; padding-left:32px; padding-right:0; text-transform:uppercase;}
-.catalog-product-compare-index .link-print:hover span{background:url(/img/btn-print.png) left 0px no-repeat;}
+.catalog-product-compare-index .link-print span {background:url(/bundles/legosite/img/btn-print.png) left 0px no-repeat; padding-left:32px; padding-right:0; text-transform:uppercase;}
+.catalog-product-compare-index .link-print:hover span{background:url(/bundles/legosite/img/btn-print.png) left 0px no-repeat;}
 .catalog-product-compare-index{ background:#fff;}
 .catalog-product-compare-index .buttons-set {clear:both;margin:0px 0 0;padding:20px 0px 5px 0px;}
 .catalog-product-compare-index .product-name a { font-size:15px; color:#2f2f2f;}
@@ -2545,11 +2545,11 @@ div.itemSubMenu {margin-left:0px;}
 .catalog-product-compare-index .regular-price .price {color:#0CA6C4;float:none;font-size:22px;font-weight: normal;}
 .catalog-product-compare-index td button.button{ float:none;}
 .catalog-product-compare-index td .add-to-links {float:none;width:100%; padding-top:12px;}
-.catalog-product-compare-index td .add-to-links li a{ padding-left:22px;background:url(/img/wislish-page-compare.png) left top no-repeat;}
+.catalog-product-compare-index td .add-to-links li a{ padding-left:22px;background:url(/bundles/legosite/img/wislish-page-compare.png) left top no-repeat;}
 .catalog-product-compare-index .price-box.left{ float:none; width:100%; text-align:center;}
 .catalog-product-compare-index .ratings .rating-box {float:none;margin: 0 auto 10px;}
 .catalog-product-compare-index .page-title { background:none; margin:0 0 10px;padding:5px 0 0px;}
-#product_comparison{background:url(/img/compare-y.gif) repeat-x left bottom #ffffff;-webkit-box-shadow:0px 0px 12px rgba(48, 50, 50, 0.12);-moz-box-shadow:0px 0px 12px rgba(48, 50, 50, 0.12);box-shadow:0px 0px 12px rgba(48, 50, 50, 0.12);}
+#product_comparison{background:url(/bundles/legosite/img/compare-y.gif) repeat-x left bottom #ffffff;-webkit-box-shadow:0px 0px 12px rgba(48, 50, 50, 0.12);-moz-box-shadow:0px 0px 12px rgba(48, 50, 50, 0.12);box-shadow:0px 0px 12px rgba(48, 50, 50, 0.12);}
 .catalog-product-compare-index .data-table td{ padding:14px 20px 14px 20px; color:#7e7e7e;}
 .catalog-product-compare-index .data-table th {padding:14px 20px; font-weight:bold; color:#000000;}
 .catalog-product-compare-index .btn-remove {display: block;font-size: 0;height:19px;line-height: 0;margin-left: 2px;overflow: hidden;text-indent: -999em;
@@ -2557,7 +2557,7 @@ width:19px;position:absolute;right:-20px;top:-9px;}
 .catalog-product-compare-index .btn-remove:hover{ background-position:0 -19px;}
 .compare-inner{}
 .catalog-product-compare-index .data-table tr.even {background:#fefefe;}
-#product_comparison  td.first-in-line{background:url(/img/tail-compare.png) repeat-y left top;}
+#product_comparison  td.first-in-line{background:url(/bundles/legosite/img/tail-compare.png) repeat-y left top;}
 #product_comparison  th {border: 1px solid #ececec;background:none;}
 #product_comparison  td {border: 1px solid #ececec; background:none; color:#7e7e7e;}
 #product_comparison tr{ background:none;}
@@ -2589,9 +2589,9 @@ width:19px;position:absolute;right:-20px;top:-9px;}
 .map-popup-heading { padding:20px 40px 20px 20px; width:240px; background:#fbfbfb }
 .map-popup-heading h2 { font-size:12px; margin:0; word-wrap:break-word; text-align:left; text-overflow:ellipsis; color:#2f2f2f; text-transform:uppercase; }
 .map-popup-arrow { background:0; position:absolute; left:50%; top:-10px; height:10px; width:19px; }
-.map-popup-close { background:url(/img/btn_remove.gif) 0 0 no-repeat; display:block; position:absolute; top:10px; right:10px; height:19px; width:19px; text-indent:-9999em; }
+.map-popup-close { background:url(/bundles/legosite/img/btn_remove.gif) 0 0 no-repeat; display:block; position:absolute; top:10px; right:10px; height:19px; width:19px; text-indent:-9999em; }
 .map-popup-close:hover{ background-position:0 -19px;}
-.map-popup-content {background:url(/img/tail-popup.gif) left  top repeat-x #f6f6f6; padding:18px 20px 20px 20px; overflow:hidden; text-align:left; width:260px;  }
+.map-popup-content {background:url(/bundles/legosite/img/tail-popup.gif) left  top repeat-x #f6f6f6; padding:18px 20px 20px 20px; overflow:hidden; text-align:left; width:260px;  }
 #map-popup-price-box strong{ color:#0CA6C4; float:left; margin-right:7px;}
 .map-popup .regular-price .price {color:#000;float:left;font-size:12px;font-weight:bold;}
 .map-popup-checkout { display:inline; float:right; text-align:right; }
@@ -2618,16 +2618,16 @@ width:19px;position:absolute;right:-20px;top:-9px;}
 .footer .block-subscribe .block-content{}
 .footer .block-subscribe .input-box{ float:left; width:175px; }
 .footer .block-subscribe .actions{ float:left; width:23px; padding:0; margin-left:-1px;}
-.footer .block-subscribe .actions .button span span{ width:23px; height:24px; text-indent:-9999px;background:url(/img/btn-newsletter.gif) 0 0 no-repeat; padding:0;}
+.footer .block-subscribe .actions .button span span{ width:23px; height:24px; text-indent:-9999px;background:url(/bundles/legosite/img/btn-newsletter.gif) 0 0 no-repeat; padding:0;}
 .footer .block-subscribe.block button.button span { height:24px;}
 .footer .block-subscribe .actions .button:hover span span{ background-position:0 -24px}
 /* Footer ================================================================================ */
-.footer { background:url(/img/footer_tile.gif) repeat-y; position:relative;}
-.footer_top { background:url(/img/footer_top.gif) no-repeat; padding:43px 20px 3px 20px; }
-.footer_bottom { background:url(/img/footer_bottom.png) no-repeat; height:51px; }
+.footer { background:url(/bundles/legosite/img/footer_tile.gif) repeat-y; position:relative;}
+.footer_top { background:url(/bundles/legosite/img/footer_top.gif) no-repeat; padding:43px 20px 3px 20px; }
+.footer_bottom { background:url(/bundles/legosite/img/footer_bottom.png) no-repeat; height:51px; }
 .footer .wrapper { margin-bottom:20px; }
 .footer-container{ padding-bottom:30px;}
-.footer address { background:url(/img/bg_copy.png) no-repeat; display:block; padding:32px 0 0 0; color:#357DCD; }
+.footer address { background:url(/bundles/legosite/img/bg_copy.png) no-repeat; display:block; padding:32px 0 0 0; color:#357DCD; }
 .footer h4{ font-size:19px; font-weight:normal; color:#357DCD; font-family:'Anton', Impact, 'Open Sans', sans-serif; text-transform:uppercase; margin:0 0 18px 0; }
 .footer ul #FME-contact-form{ display:none;}
 .footer ul li { display:block; padding:0 0 3px 0; }
@@ -2647,7 +2647,7 @@ width:19px;position:absolute;right:-20px;top:-9px;}
 /* ==================================back-top ================================================== */
 #back-top {position: fixed;bottom:40px;z-index:99;left:50%;margin-left:550px; display:none; width:41px;height:41px;}
 #back-top a:hover {color:#79ec3e;}
-#back-top span {width:41px;height:41px; display: block;margin-bottom:41px;background:url(/img/up-arrow.png) no-repeat left 0px;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader() !important;}
+#back-top span {width:41px;height:41px; display: block;margin-bottom:41px;background:url(/bundles/legosite/img/up-arrow.png) no-repeat left 0px;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader() !important;}
 #back-top a:hover span { background-position:left -41px;}
 /* ======================================================================================= */
 
@@ -2717,24 +2717,24 @@ width:19px;position:absolute;right:-20px;top:-9px;}
 #nav_slides a { float:left; display:block; text-indent:-9999px; line-height:0; font-size:0; }
 #nav_slides a.activeSlide {  }
 
-.page_sl1 { background:url(/img/page1.png) no-repeat; float:left; width:24px; height:24px; margin:25px 7px 0 0; }
-.page_sl2 { background:url(/img/page2.png) no-repeat; float:left; width:20px; height:20px; margin:17px 6px 0 0; }
-.page_sl3 { background:url(/img/page3.png) no-repeat; float:left; width:16px; height:16px; margin:0; }
-.page_sl1.activeSlide { background:url(/img/page1.png) no-repeat 0 -24px; }
-.page_sl2.activeSlide { background:url(/img/page2.png) no-repeat 0 -20px; }
-.page_sl3.activeSlide { background:url(/img/page3.png) no-repeat 0 -16px; }
+.page_sl1 { background:url(/bundles/legosite/img/page1.png) no-repeat; float:left; width:24px; height:24px; margin:25px 7px 0 0; }
+.page_sl2 { background:url(/bundles/legosite/img/page2.png) no-repeat; float:left; width:20px; height:20px; margin:17px 6px 0 0; }
+.page_sl3 { background:url(/bundles/legosite/img/page3.png) no-repeat; float:left; width:16px; height:16px; margin:0; }
+.page_sl1.activeSlide { background:url(/bundles/legosite/img/page1.png) no-repeat 0 -24px; }
+.page_sl2.activeSlide { background:url(/bundles/legosite/img/page2.png) no-repeat 0 -20px; }
+.page_sl3.activeSlide { background:url(/bundles/legosite/img/page3.png) no-repeat 0 -16px; }
 
-.cl1 { background:url(/img/slider_pic1.jpg) no-repeat; width:764px; height:452px; }
-.cl2 { background:url(/img/slider_pic2.jpg) no-repeat; width:764px; height:452px; }
-.cl3 { background:url(/img/slider_pic3.jpg) no-repeat; width:764px; height:452px; }
+.cl1 { background:url(/bundles/legosite/img/slider_pic1.jpg) no-repeat; width:764px; height:452px; }
+.cl2 { background:url(/bundles/legosite/img/slider_pic2.jpg) no-repeat; width:764px; height:452px; }
+.cl3 { background:url(/bundles/legosite/img/slider_pic3.jpg) no-repeat; width:764px; height:452px; }
 .btn_shop_now { padding:298px 0 0 465px; }
-.btn_shop_now a { display:block; background:url(/img/btn_shop_now.png) no-repeat; width:219px; height:62px; }
+.btn_shop_now a { display:block; background:url(/bundles/legosite/img/btn_shop_now.png) no-repeat; width:219px; height:62px; }
 
 .products-grid-new { overflow:hidden; margin:0 0 15px 0; }
 .products-grid-new.last { margin:0 !important; }
-.products-grid-new li.item { float:left; width:245px; background:url(/img/bg_grid_top.gif) no-repeat; margin:0 16px 0 0; }
+.products-grid-new li.item { float:left; width:245px; background:url(/bundles/legosite/img/bg_grid_top.gif) no-repeat; margin:0 16px 0 0; }
 .products-grid-new li.last { margin:0 !important; }
-.products-grid-new li.item .grid_holder { background:url(/img/bg_grid_bot.gif) no-repeat 0% 100%; min-height:348px; }
+.products-grid-new li.item .grid_holder { background:url(/bundles/legosite/img/bg_grid_bot.gif) no-repeat 0% 100%; min-height:348px; }
 .products-grid-new .product-name { padding:24px 10px 4px 24px; line-height:18px; font-weight:bold; margin:0; min-height:36px; }
 .products-grid-new .product-name a { color:#FE5900; text-decoration:underline; }
 .products-grid-new .product-name a:hover { color:#0CA6C4; text-decoration:underline; }
