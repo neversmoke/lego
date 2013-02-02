@@ -1,0 +1,57 @@
+
+{% if error %}
+    <div id="error_logout">{{ error|trans({}, 'FOSUserBundle') }}</div>
+{% endif %}
+     
+<div class="account-login-home "> <span class="btn-log">
+Log In 
+</span>       
+        
+    <form action="{{ path("fos_user_security_check") }}" method="post" id="login-form">
+        <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+        <input type="hidden" name="_route" value="{{ path('index') }}" />
+    <div class="col2-set">
+      <div class="col-home">
+        <div class="content">
+          <h2>New Customers</h2>
+          <p>By creating an account with our store, you will be able to 
+move through the checkout process faster, store multiple shipping 
+addresses, view and track your orders in your account and more.</p>
+          <div class="buttons-set">
+            <button type="button" title="Create an Account" class="button" onclick="window.location='http://livedemo00.template-help.com/magento_41646/customer/account/create/';"><span><span>Create an Account</span></span></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-home-2">
+        <div class="content">
+          <h2>Registered Customers</h2>
+          <p>If you have an account with us, please log in.</p>
+          <ul class="form-list">
+            <li>
+              <label for="email" class="required"><em>*</em>Email Address</label>
+              <div class="input-box">
+                  
+            <input type="text" id="email" name="_username" value="{{ last_username }}"
+                   class="input" style="width: 110px; margin-left: 14px;" required="required" />
+                <input name="login[username]" id="email" class="input-text required-entry validate-email" title="Email Address" type="text">
+              </div>
+            </li>
+            <li>
+              <label for="pass" class="required"><em>*</em>Password</label>
+              <div class="input-box">
+               <input  id="pass" style="width: 110px; margin-left: 14px;" 
+                    type="password" id="pass" name="_password" required="required" />
+              </div>
+            </li>
+                      </ul>
+          <div class="buttons-set"> <a href="http://livedemo00.template-help.com/magento_41646/customer/account/forgotpassword/" class="f-left">Forgot Your Password?</a>
+            <p class="required">* Required Fields</p>
+            <button type="submit" class="button" title="Login" name="send" id="send2"><span><span>Login</span></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+</div>
+ 
