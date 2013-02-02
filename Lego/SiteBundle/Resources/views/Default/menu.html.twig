@@ -1,0 +1,17 @@
+     <div class="bg_top"></div>
+      <div class="header_menu">
+ <ul>  
+        {% for entity in entities %}
+                    
+                    <li class="link{{loop.index+1}}">
+                        
+                        <a href="{{ path("other", {"_locale":"ru", "translit" : entity.translit }) }}">
+                            {{entity.title}}
+                        </a>
+                    
+                        
+                    </li>
+        {% endfor %}
+ </ul>
+</div>         
+              
