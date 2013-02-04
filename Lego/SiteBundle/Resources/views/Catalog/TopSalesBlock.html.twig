@@ -1,0 +1,45 @@
+ <div class="page-title"><h2>ТОП продаж</h2></div>
+                    <ul class="products-grid-new first odd">
+                    {% for entity in entities %}
+                    {% set class %}
+                            {% if loop.index%3!=1 %}
+                                last
+                                {% else %}
+                                first
+                            {% endif %}
+                    {% endset %}
+                    <li class="item {{ class }}">
+                        <div class="grid_holder">
+                                <h3 class="product-name">
+                                    <a href="http://livedemo00.template-help.com/magento_41646/con-proident-sunt-in-culpa.html" title="{{ entity.title }}">
+                                        {{ entity.title }}
+                                    </a>
+                                </h3>
+                                <a href="http://livedemo00.template-help.com/magento_41646/con-proident-sunt-in-culpa.html" 
+                                title="Cupidatat non proident, sunt in  culpa qui offic" class="product-image">
+                                    {% if entity.iconImage is not null %}
+                                        <img src = '{{ vich_uploader_asset(entity, 'iconImage') }}' alt="{{ entity.title }}" width="200px" height="185px"/>
+                                    {% else %}
+                                        <img src = '{{ entity.smallIcon }}' alt="{{ entity.title }}"  width="200px" height="185px"/>
+                                    {% endif %}
+                                </a>                
+                
+                                <div class="price-box">
+                                    <span class="regular-price" id="product-price-59-new">
+                                    <span class="price">{{ entity.price }} UAH</span>
+                                    </span>        
+                                </div>
+
+                                <div class="actions">
+                                        <button type="button" title="Add to Cart" class="button btn-cart">
+                                            <span><span>В корзину</span></span>
+                                        </button>
+                                        <a href="l" class="btn_details">
+                                            Подробнее
+                                        </a>
+                                </div>
+                        </div>
+                    </li>
+                    {% endfor %}
+                    </ul> 
+

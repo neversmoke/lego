@@ -29,7 +29,7 @@ class SecurityController extends SC
     {
         $securityContext = $this->container->get('security.context');
         if( $securityContext->isGranted('IS_AUTHENTICATED_REMEMBERED') ){
-            
+           
                     $user= $securityContext->getToken()->getUser();
                     $arr=array("error"=> $data["error"],"last_username" => $user->getFIO(), "csrf_token"=>$data["csrf_token"]);
                     

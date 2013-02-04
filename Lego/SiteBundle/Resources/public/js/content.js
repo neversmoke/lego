@@ -13,5 +13,6 @@ $( document ).ready(function() {
     else
         $('.account-login-home').addClass('show');
     });  
-    
+
+ $('.slider').jcarousel({auto: 1, scroll: 1, wrap: 'circular' });
 });

@@ -18,6 +18,7 @@
 <link rel="stylesheet" type="text/css" href="{{ asset ( 'bundles/legosite/css/catalogsale.css' ) }}" media="all"/>
 <link rel="stylesheet" type="text/css" href="{{ asset ( 'bundles/legosite/css/vpager.css' ) }}" media="all"/>
 <link rel="stylesheet" type="text/css" href="{{ asset ( 'bundles/legosite/css/print.css' ) }}" media="print"/>
+<link rel="stylesheet" type="text/css" href="{{ asset ( 'bundles/legosite/css/scin.css' ) }}" media="print"/>
 <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
 <link href="{{ asset ( 'bundles/legosite/css/fancy.css' ) }}" rel="stylesheet" type="text/css" media="all" />    
   
@@ -26,6 +27,7 @@
 
         <script src="{{ asset ( 'bundles/itcadmin/js/plugins/jquery-1.8.2.min.js?ver=1.8.2' ) }}"  type="text/javascript"> </script>
         <script src="{{ asset ( 'bundles/legosite/js/content.js' ) }}" type="text/javascript"></script>
+        <script src="{{ asset ( 'bundles/legosite/js/jquery.jcarousel.min.js' ) }}" type="text/javascript"></script>
 
          {% endblock %}
 </head>
@@ -88,31 +90,13 @@
      {% block body %}
         {% endblock%}                        
                     
-                <div class="col-left sidebar"><div class="block block-category first">
-<div class="block-title"><strong><span>Категории</span></strong></div>
-<div class="nav-container">
-    <ul id="nav">
-        <li class="level0 nav-1 first level-top"><a href="http://livedemo00.template-help.com/magento_41646/action-toys-figures.html" class="level-top"><span>Action Toys &amp; Figures</span></a></li><li class="level0 nav-2 level-top parent items"><a href="http://livedemo00.template-help.com/magento_41646/arts-crafts.html" class="level-top"><span>Arts &amp; Crafts</span></a><ul class="level0"><li class="level1 nav-2-1 first"><a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/craft-kits.html"><span>Craft Kits</span></a></li><li class="level1 nav-2-2"><a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html"><span>Drawing &amp; Art Supplies</span></a></li><li class="level1 nav-2-3"><a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/easel-arts.html"><span>Easel Arts</span></a></li><li class="level1 nav-2-4 last"><a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/stamps-stickers.html"><span>Stamps &amp; Stickers</span></a></li></ul></li><li class="level0 nav-3 level-top"><a href="http://livedemo00.template-help.com/magento_41646/dolls-soft-toys.html" class="level-top"><span>Dolls &amp; Soft Toys</span></a></li><li class="level0 nav-4 level-top"><a href="http://livedemo00.template-help.com/magento_41646/games-puzzles.html" class="level-top"><span>Games &amp; Puzzles</span></a></li><li class="level0 nav-5 last level-top"><a href="http://livedemo00.template-help.com/magento_41646/collectibles.html" class="level-top"><span>Collectibles</span></a></li>    </ul>
-</div>
-</div>
-<div class="block block-cart">
-        <div class="block-title">
-        <strong><span>Новинки</span></strong>
-    </div>
-    <div class="block-content">
-                        <p class="empty">You have no items in your shopping cart.</p>
-        </div>
-</div>
-<div class="block block-list block-compare">
-    <div class="block-title">
-        <strong><span>Лидеры продаж</span></strong>
-    </div>
-    <div class="block-content">
-            <p class="empty">You have no items to compare.</p>
-        </div>
-</div>
+                <div class="col-left sidebar">
+{% render 'MainSiteBundle:Catalog:CategoriesBlock' %}
+{% render 'MainSiteBundle:Catalog:NoveltyBlock' %}
+{% render 'MainSiteBundle:Catalog:BestSellerBlock' %}
+
  
-<div class="block block-poll last_block">
+{#<div class="block block-poll last_block">
     <div class="block-title">
         <strong><span>Community Poll</span></strong>
     </div>
@@ -155,52 +139,14 @@
             </div>
         </div>
     </form>
-</div>
+</div>#}
 </div>
             </div>
         </div>
         
 <div class="footer-container">
-		<div class="contact-main jqtransformdone">
-			<span class="btn-contact">Contacts</span>
-			<form action="" id="contactForm" method="post">
-			    <div class="fieldset">
-	              <h2 class="legend">Contact Information</h2>
-	              <ul class="form-list">
-	                  <li class="fields">
-	                      <div class="field">
-	                          <label for="name" class="required"><em>*</em>Name</label>
-	                          <div class="input-box">
-	                              <div style="width: 294px;" class="jqTransformInputWrapper"><div class="jqTransformInputInner"><div><input name="name" id="name" title="Name" class="input-text required-entry jqtranformdone jqTransformInput" type="text"></div></div></div>
-	                          </div>
-	                      </div>
-	                      <div class="field">
-	                          <label for="email" class="required"><em>*</em>Email</label>
-	                          <div class="input-box">
-	                              <div style="width: 294px;" class="jqTransformInputWrapper"><div class="jqTransformInputInner"><div><input name="email" id="email" title="Email" class="input-text required-entry validate-email jqtranformdone jqTransformInput" type="text"></div></div></div>
-	                          </div>
-	                      </div>
-							<div class="field last">
-								<label for="telephone">Telephone</label>
-								<div class="input-box">
-									<div style="width: 294px;" class="jqTransformInputWrapper"><div class="jqTransformInputInner"><div><input name="telephone" id="telephone" title="Telephone" class="input-text jqtranformdone jqTransformInput" type="text"></div></div></div>
-								</div>
-							</div>
-	                  </li>
-	                  <li class="wide">
-	                      <label for="comment" class="required"><em>*</em>Comment</label>
-	                      <div class="input-box">
-	                          <table class="jqTransformTextarea" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td id="jqTransformTextarea-tl"></td><td id="jqTransformTextarea-tm"></td><td id="jqTransformTextarea-tr"></td></tr><tr><td id="jqTransformTextarea-ml">&nbsp;</td><td id="jqTransformTextarea-mm"><div><textarea name="comment" id="comment" title="Comment" class="required-entry input-text jqtransformdone" cols="5" rows="3"></textarea></div></td><td id="jqTransformTextarea-mr">&nbsp;</td></tr><tr><td id="jqTransformTextarea-bl"></td><td id="jqTransformTextarea-bm"></td><td id="jqTransformTextarea-br"></td></tr></tbody></table>
-	                      </div>
-	                  </li>
-	              </ul>
-	          </div>
-	          <div class="buttons-set">
-	              <div style="width: 138px;" class="jqTransformInputWrapper"><div class="jqTransformInputInner"><div><input class="jqtranformdone jqTransformInput" name="hideit" id="hideit" style="display: none;" type="text"></div></div></div>
-	              <button type="submit" title="Submit" class="button"><span><span>Submit</span></span></button><p class="required">* Required Fields</p>
-	          </div>
-	      </form>
-	</div>
+    {% include "LegoSiteBundle:Default:callback.html.twig"%}
+
         {% render "LegoSiteBundle:Security:login"%}
  
 
