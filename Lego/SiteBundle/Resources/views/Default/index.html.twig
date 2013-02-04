@@ -1,23 +1,16 @@
 {% extends 'LegoSiteBundle::layout.html.twig' %} 
 {% block body %}
 <div class="col-main">
-                                        <div class="std"><script type="text/javascript" src="{{ asset ( 'bundles/legosite/js/jquery_004.js' ) }}"></script>
+                                        <div class="std">
                                                 <div class="index_slider">
-                                                <div id="nav_slides">
-                                                    <div id="nav_sl_wrap">
-                                                        <a href="#" class="page_sl1">1</a>
-                                                        <a href="#" class="page_sl2">2</a>
-                                                        <a href="#" class="page_sl3 activeSlide">3</a>
-                                                    </div>
-                                                 </div>
                                                         <div style="position: relative;" id="s4">
-                                                        <div style="position: absolute; top: 0px; left: 0px; display: none; z-index: 3; opacity: 0; width: 764px; height: 452px;" class="cl1">
+                                                        <div class="cl1">
                                                         <div class="btn_shop_now"><a href="http://livedemo00.template-help.com/magento_41646/action-toys-figures.html"></a></div>
                                                         </div> 
-                                                        <div style="position: absolute; top: 0px; left: 0px; display: none; z-index: 3; opacity: 0; width: 764px; height: 452px;" class="cl2">
+                                                        <div class="cl2">
                                                                 <div class="btn_shop_now"><a href="http://livedemo00.template-help.com/magento_41646/dolls-soft-toys.html"></a></div>
                                                         </div>
-                                                        <div style="position: absolute; top: 0px; left: 0px; display: block; z-index: 4; opacity: 1; width: 764px; height: 452px;" class="cl3">
+                                                        <div class="cl3">
                                                                 <div class="btn_shop_now"><a href="http://livedemo00.template-help.com/magento_41646/collectibles.html"></a></div>
                                                         </div>
                                                         </div>
@@ -26,10 +19,10 @@
         
         
         
-      <div class="page-title"><h2>Информация</h2></div>   
-        {{ entity.content | raw() }}
+
       
 {% render 'MainSiteBundle:Catalog:TopSalesBlock' %}
-       
+      <div class="page-title"><h2>Информация</h2></div>   
+        {{ entity.content | raw() }}       
 </div>
 {% endblock %}
