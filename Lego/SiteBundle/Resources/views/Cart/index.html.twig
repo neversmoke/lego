@@ -122,6 +122,8 @@
                     </tr>
                     </tbody>
                     </table>
+             
+            {% if auth==1 %}
                     <ul class="checkout-types">
                         <li>
                             <a href="{{ path('main_site_cart_accept') }}">
@@ -139,6 +141,21 @@
                     </a>
                     </li>
                     </ul>
+                  {% else %}
+                      <ul class="checkout-types">
+                        <li>
+                            <a href="{{ path('registration') }}">
+                            <button class="button btn-proceed-checkout btn-checkout" 
+                                    title="Продолжить заказ" type="button">
+                                <span>
+                                    <span>Зарегестрируйтесь</span>
+                                </span>
+                            </button>
+                            </a>
+                        </li>
+                      </ul>
+                       
+            {% endif %}
                 </div>
             </div>
             {% endif %}
