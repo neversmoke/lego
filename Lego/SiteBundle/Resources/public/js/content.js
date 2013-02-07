@@ -155,3 +155,10 @@ $( document ).ready(function() {
 
 
 });
+function Amount(edit){
+    var value = edit.val();
+    var classes = edit.attr('name');
+    var href=$("#product_"+classes).attr('href');
+    str = href.substring(0, href.length - href.split("/").slice(-1).length)
+    $("#product_"+classes).attr('href', str+value);
+}
