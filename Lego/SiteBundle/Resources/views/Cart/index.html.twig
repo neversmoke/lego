@@ -50,7 +50,7 @@
                                         </h2>
                                     </td>
                                     <td class="a-center edit">
-                                        <a title="Edit item parameters" href="">
+                                        <a title="Edit item parameters" id="product_cart_{{ product.id }}"  href="{{ path('main_site_cart_add', {'id':product.id, 'amount': 3}) }}">
                                             Edit
                                         </a>
                                     </td>
@@ -60,7 +60,7 @@
                                         </span>
                                     </td>
                                     <td class="a-center">
-                                        <input class="input-text qty" maxlength="12" title="Qty" size="4" value="{{ cart[product.id].amount }}" name="cart[275][qty]">
+                                        <input class="input-text" rel="{{ product.id }}" onkeyup ="Amount($(this))" maxlength="12" title="Qty" size="4" value="{{ cart[product.id].amount }}" name="cart_{{ product.id }}">
                                     </td>
                                     <td class="a-right">
                                         <span class="cart-price">
