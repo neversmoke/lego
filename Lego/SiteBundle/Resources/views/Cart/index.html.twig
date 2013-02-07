@@ -124,16 +124,19 @@
                     </table>
                     <ul class="checkout-types">
                         <li>
+                            <a href="{{ path('main_site_cart_accept') }}">
                             <button class="button btn-proceed-checkout btn-checkout" 
                                     title="Продолжить заказ" type="button">
                                 <span>
-                                    <span>Продолжить заказ</span>
+                                    <span>Подтвердить заказ</span>
                                 </span>
-                                </button>
+                            </button>
+                            </a>
                         </li>
                     <li>
-                    <a title="Продолжить заказ" 
-                       href="">Продолжить заказ</a>
+                    <a title="Продолжить заказ" href="{{ path('main_site_cart_accept') }}">
+                        Подтвердить заказ
+                    </a>
                     </li>
                     </ul>
                 </div>
