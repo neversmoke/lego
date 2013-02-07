@@ -1,0 +1,110 @@
+{% extends 'LegoSiteBundle::layout.html.twig' %} 
+{% block body %}
+<div class="col-main">
+<div class="page-title category-title">
+        <h1>{{ entity.title }}</h1>
+</div>
+        
+   <div class="toolbar">
+    <div class="pager">
+        <p class="amount">
+                            
+                    </p>
+
+        <div class="limiter jqtransformdone">
+            <label style="cursor: pointer;">Show</label>
+           <div style="z-index: 10; width: 40px;" class="jqTransformSelectWrapper"><div><span style="width: 6px;">
+                    10                </span><strong class="jqTransformSelectOpen"></strong></div><ul style="width: 38px; display: none; visibility: visible;"><li><a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=5&amp;mode=list" index="0">
+                    5                </a></li><li><a class="selected" href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=10&amp;mode=list" index="1">
+                    10                </a></li><li><a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=15&amp;mode=list" index="2">
+                    15                </a></li><li><a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=20&amp;mode=list" index="3">
+                    20                </a></li><li><a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=25&amp;mode=list" index="4">
+                    25                </a></li></ul><select style="" class="jqTransformHidden" onchange="setLocation(this.value)">
+                            <option value="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=5&amp;mode=list">
+                    5                </option>
+                            <option value="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=10&amp;mode=list" selected="selected">
+                    10                </option>
+                            <option value="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=15&amp;mode=list">
+                    15                </option>
+                            <option value="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=20&amp;mode=list">
+                    20                </option>
+                            <option value="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=25&amp;mode=list">
+                    25                </option>
+                        </select></div> 
+        </div>
+
+        
+    
+    
+
+    
+    
+
+    </div>
+
+        <div class="sorter">
+               {# <p class="view-mode">
+                                    <label>View as:</label>
+                                                <a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;mode=grid" title="Grid" class="grid">Grid</a>&nbsp;
+                                                                <strong title="List" class="list">List</strong>&nbsp;
+                                                </p>#}
+            
+        <div class="sort-by jqtransformdone">
+            <label style="cursor: pointer;">Sort By</label>
+            <div style="z-index: 10; width: 100px;" class="jqTransformSelectWrapper"><div><span style="width: 6px;">
+                    Position                </span><strong class="jqTransformSelectOpen"></strong></div><ul style="width: 98px; display: none; visibility: visible;"><li><a class="selected" href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;dir=asc&amp;l=0&amp;mode=list&amp;order=position" index="0">
+                    Position                </a></li><li><a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;dir=asc&amp;l=0&amp;mode=list&amp;order=name" index="1">
+                    Name                </a></li><li><a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;dir=asc&amp;l=0&amp;mode=list&amp;order=price" index="2">
+                    Price                </a></li></ul><select style="" class="jqTransformHidden" onchange="setLocation(this.value)">
+                            <option value="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;dir=asc&amp;l=0&amp;mode=list&amp;order=position" selected="selected">
+                    Position                </option>
+                            <option value="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;dir=asc&amp;l=0&amp;mode=list&amp;order=name">
+                    Name                </option>
+                            <option value="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;dir=asc&amp;l=0&amp;mode=list&amp;order=price">
+                    Price                </option>
+                        </select></div>
+                            <a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;dir=desc&amp;l=0&amp;mode=list&amp;order=position" title="Set Descending Direction"><img src="../style/img/i_asc_arrow.gif" alt="Set Descending Direction" class="v-middle"></a>
+                    </div>
+    </div>
+    </div>        
+        
+        <ol id="products-list" class="products-list">
+            {% for product in entities %}
+            <li class="item odd">
+                <div class="list-inner">
+                    <a class="product-image" title="" href="">
+                    <img class="pr-img" width="170" height="170" alt="Alex Art Box - Wooden Art Center with Assorted Media" src="{{ vich_uploader_asset(product, 'iconImage') }}" />
+                    </a>
+                </div>
+                    
+                    
+           <div class="product-shop">
+            <div class="f-fix">
+             <h2 class="product-name"><a href="{{ path('product', { 'translit': product.translit }) }}">
+                     {{ product.title }}
+                 </a></h2>
+              <div class="desc std">
+                {{ product.description }}
+              </div>
+              <div class="wrapper">   
+                    <div class="price-box">
+                        <span id="product-price-14" class="regular-price">
+                              <span class="price">{{ product.price }} UAH</span>
+                        </span>
+                    </div>
+              </div>
+               <div class="row-list">
+                   <p class="list-btn">
+                     <a href="{{path('main_site_cart_add', {'id':product.id, 'amount': 1})}}">
+                      <button class="button btn-cart" title="Add to Cart" type="button"><span><span>В корзину</span></span></button>
+                     </a>
+                    </p>
+                </div>
+              </div>
+        </div>
+            </li>
+            {% endfor %}
+        </ol>
+        
+</div>
+{% endblock %}

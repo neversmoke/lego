@@ -101,8 +101,8 @@ ul,ol         { list-style:none; }
 .page-empty { background:#fff; padding:20px; text-align:left; }
 .page-popup { padding:20px; text-align:left; margin:0 auto; background:#fff;}
 .page-popup  .ratings .rating-box {float:none; margin:0 auto 10px;}
-.main-container { background:url(/bundles/legosite/img/bg_content.png) repeat-y; width:1086px; margin:0 -11px; }
-.main { background:url(/bundles/legosite/img/bg_content_top.png) no-repeat; padding:0 29px 22px 30px; }
+.main-container { background:url('/bundles/legosite/img/bg_content.png') repeat-y; width:1086px; margin:0 -11px; }
+.main { background:url('/bundles/legosite/img/bg_content_top.png') no-repeat; padding:0 29px 22px 30px; }
 
 /* Base Columns */
 .col-left { float:left;width:238px; padding-top:11px; }
@@ -167,14 +167,14 @@ button.button span {
 	  color:#fff; 
 	  text-transform:uppercase;
 			padding:0 22px 0 0;
-			background:url(/bundles/legosite/img/button.png) no-repeat 100% 0%;
+			background:url('/bundles/legosite/img/button.png') no-repeat 100% 0%;
 }
-button.button span span { background:url(/bundles/legosite/img/button.png) no-repeat 0% 0%; padding:0 0 0 21px; display:block; float:left;}
+button.button span span { background:url('/bundles/legosite/img/button.png') no-repeat 0% 0%; padding:0 0 0 21px; display:block; float:left;}
 button.button:hover span {
-	  background:url(/bundles/legosite/img/button.png) no-repeat 100% -32px;
+	  background:url('/bundles/legosite/img/button.png') no-repeat 100% -32px;
 }
 button.button:hover span span {
-	  background:url(/bundles/legosite/img/button.png) no-repeat 0% -32px;
+	  background:url('/bundles/legosite/img/button.png') no-repeat 0% -32px;
 }
 	
 /**********  Button fancybox Product *****************************************/	
@@ -203,7 +203,7 @@ button.button:hover span span {
 .products-grid .grid-inner:hover .fancybox,
 .products-list .list-inner:hover .fancybox { display:inline-block;}
 
-.products-grid .grid-inner .fancybox:hover,
+.products-grid .grid-inner 
 .products-list .list-inner .fancybox:hover { 
 	 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3984CB', endColorstr='#3984CB'); /* IE6-9 */
 	  background: -webkit-gradient(linear, left top, left bottom, from(#3984CB), to(#3984CB));

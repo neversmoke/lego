@@ -1,0 +1,103 @@
+{% extends 'LegoSiteBundle::layout.html.twig' %} 
+{% block body %}
+<div class="col-main">
+    <div class="product-view">
+        <div class="product-essential">
+            <div id="product_addtocart_form">
+                <div class="product-shop">
+                    <div class="product-name"><h1>{{ entity.title }}</h1></div>
+                    <div class="short-description">
+                        <div class="std">
+                            {{ entity.description|raw() }}
+                        </div>
+                            <p class="availability in-stock"><span></span></p>
+                            <div class="add-to-box">
+                                <div class="add-to-cart">
+                                    <div class="price-box">
+                                        <span id="product-price-14" class="regular-price">
+                                            <span class="price">{{ entity.price }}</span>
+                                        </span>
+                                    </div>
+                                    {#<label for="qty">Кол:</label>
+                                    <input id="qty" class="input-text qty" type="text" title="Qty" value="1" maxlength="12" name="qty">#}
+                                    <a href="{{path('main_site_cart_add', {'id':entity.id, 'amount': 1})}}"><button class="button btn-cart" title="Add to Cart" type="button">
+                                        <span>
+                                            <span>В корзину</span>
+                                        </span>
+                                    </button>
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                    <div class="product-img-box">
+                        <div class="zoom-inner">
+                            <div class="product-image"> 
+                              <div id="wrap" style="top:0px;z-index:98;position:relative;">
+                                <a id="" class="fancybox" rel="1" href="{{ vich_uploader_asset(entity, 'iconImage') }}" style="position: relative; display: block;">
+                                    <img src = '{{ vich_uploader_asset(entity, 'iconImage') }}' width="298px" height="298px"/>
+                                </a>
+                               </div>
+                            </div>
+                                <div class="more-views">
+                                    <ul>
+                                        {% for image in images %}
+                                            <li>
+                                                <a class="fancybox" rel="1" title="" href="{{ vich_uploader_asset(image, 'image') }}">
+                                                    <img alt="" width="91px" height="91px" src="{{ vich_uploader_asset(image, 'smallImage') }}" />
+                                                </a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                           
+                        </div>
+                    </div>
+                    <div class="clearer"></div>
+                    
+            </div>
+        </div>
+            <div class="product-collateral">
+                <div class="padder">
+                    <div id="product_tabs_description_tabbed_contents">
+                        <div class="std">
+                            {{ entity.content|raw() }}
+                        </div>
+                    </div>
+                </div>
+            </div> 
+    </div>
+        <div class="box-collateral box-up-sell ">
+            <h2>Связанные товары</h2>
+            
+                
+            <ul class="products-ups">
+                {% for relative in relatives%}
+                    {% if loop.index<4 %}
+                <li class="item">
+                    <div class="product-box">
+                        <a class="product-image" title="{{ relative.title }}" href="{{path('product', {'translit': relative.translit})}}">
+                            <img width="184" height="184" alt="{{ relative.title }}" src="{{ vich_uploader_asset(relative, 'iconImage') }}" />
+                        </a>
+                        <h3 class="product-name" style="height: 42px;">
+                            <a title="{{ relative.title }}" href="{{path('product', {'translit': relative.translit})}}">
+                                {{ relative.title }}
+                            </a>
+                        </h3>
+                        <div class="price-box">
+                            <span id="product-price-56-upsell" class="regular-price">
+                                <span class="price">{{ relative.price }}</span>
+                            </span>
+                        </div>
+                        <p class="no-rating">
+                        </p>
+                    </div>
+                </li>
+                    {% endif %}
+            {% endfor %}
+            </ul>
+        </div>
+</div>
+
+
+{% endblock %}

@@ -11,12 +11,12 @@
                     <li class="item {{ class }}">
                         <div class="grid_holder">
                                 <h3 class="product-name">
-                                    <a href="http://livedemo00.template-help.com/magento_41646/con-proident-sunt-in-culpa.html" title="{{ entity.title }}">
+                                    <a href="{{ path('product', { 'translit': entity.translit }) }}" title="{{ entity.title }}">
                                         {{ entity.title }}
                                     </a>
                                 </h3>
-                                <a href="http://livedemo00.template-help.com/magento_41646/con-proident-sunt-in-culpa.html" 
-                                title="Cupidatat non proident, sunt in  culpa qui offic" class="product-image">
+                                <a href="{{ path('product', { 'translit': entity.translit }) }}" 
+                                title="{{ entity.title }}" class="product-image fancybox">
                                     {% if entity.iconImage is not null %}
                                         <img src = '{{ vich_uploader_asset(entity, 'iconImage') }}' alt="{{ entity.title }}" width="200px" height="185px"/>
                                     {% else %}
@@ -31,12 +31,14 @@
                                 </div>
 
                                 <div class="actions">
+                                    <a href="{{path('main_site_cart_add', {'id':entity.id, 'amount': 1})}}">
                                         <button type="button" title="Add to Cart" class="button btn-cart">
                                             <span><span>В корзину</span></span>
                                         </button>
-                                        <a href="l" class="btn_details">
+                                       {# <a href="l" class="btn_details">
                                             Подробнее
-                                        </a>
+                                        </a>#}
+                                     </a>
                                 </div>
                         </div>
                     </li>

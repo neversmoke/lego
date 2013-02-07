@@ -22,7 +22,9 @@
 
       
 {% render 'MainSiteBundle:Catalog:TopSalesBlock' %}
-      <div class="page-title"><h2>Информация</h2></div>   
-        {{ entity.content | raw() }}       
+      {% if entity.content!='' %}
+        <div class="page-title"><h2>Информация</h2></div>   
+            {{ entity.content | raw() }}
+      {% endif %}
 </div>
 {% endblock %}

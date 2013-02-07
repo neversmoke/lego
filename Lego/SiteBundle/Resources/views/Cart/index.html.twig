@@ -1,0 +1,145 @@
+{% extends 'LegoSiteBundle::layout.html.twig' %}
+
+{% block body %}
+    <div class="cart">
+        <div class="page-title title-buttons">
+             <h1>Корзина</h1>
+        </div>
+            {% if cart!='' %}
+            <form method="post" action="">
+                <fieldset>
+                    <div class="radius-cart">
+                        <table id="shopping-cart-table" class="data-table cart-table">
+                            <colgroup>
+                                <col width="1">
+                                <col>
+                                <col width="1">
+                                <col width="1">
+                                <col width="1">
+                                <col width="1">
+                                <col width="1">
+                            </colgroup>
+                            <thead>
+                            <tr class="first last">
+                                <th rowspan="1"> </th>
+                                <th rowspan="1 ">
+                                    <span class="nobr">Название</span>
+                                </th>
+                                <th rowspan="1"></th>
+                                <th class="a-center" colspan="1">
+                                    <span class="nobr">Цена</span>
+                                </th>
+                                <th class="a-center" rowspan="1">Количество</th>
+                                <th class="a-center" colspan="1">Итого</th>
+                                <th class="a-center" rowspan="1"> </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                {% for product in products %}
+                                <tr class="first odd">
+                                    <td class="prod-cart">
+                                    <a class="product-image fancybox" title="{{ product.title }}" href="{{ vich_uploader_asset(product, 'iconImage') }}">
+                                        <img width="84" height="84" alt="{{ product.title }}" src="{{ vich_uploader_asset(product, 'iconImage') }}">
+                                    </a>
+                                    </td>
+                                    <td>
+                                        <h2 class="product-name">
+                                            <a href="{{ path('product', {'translit':product.translit}) }}">
+                                                {{ product.title }}
+                                            </a>
+                                        </h2>
+                                    </td>
+                                    <td class="a-center edit">
+                                        <a title="Edit item parameters" href="">
+                                            Edit
+                                        </a>
+                                    </td>
+                                    <td class="a-right">
+                                        <span class="cart-price">
+                                            <span class="price">{{ cart[product.id].price }}</span>
+                                        </span>
+                                    </td>
+                                    <td class="a-center">
+                                        <input class="input-text qty" maxlength="12" title="Qty" size="4" value="{{ cart[product.id].amount }}" name="cart[275][qty]">
+                                    </td>
+                                    <td class="a-right">
+                                        <span class="cart-price">
+                                            <span class="price">{{ cart[product.id].price*cart[product.id].amount|number_format(2, '.', ',') }}</span>
+                                        </span>
+                                    </td>
+                                    <td class="a-center last">
+                                        <a class="btn-remove btn-remove2" title="Remove item" href="{{ path('main_site_cart_remove', {'id':product.id}) }}">
+                                            Удалить
+                                        </a>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                            <tfoot>
+                            <tr class="first last">
+                            <td class="a-right last" colspan="50">
+                                <a href="{{path('main_site_cart_clear')}}">
+                                <button id="empty_cart_button" class="button btn-empty" title="Очистить корзину" value="empty_cart" name="update_cart_action" type="button">
+                                    <span>
+                                        <span>
+                                        Очистить корзину
+                                        </span>
+                                    </span>
+                                </button>
+                                </a>
+                            </td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="cart-collaterals">
+                <div class="totals">
+                    <table id="shopping-cart-totals-table">
+                    <colgroup>
+                        <col>
+                        <col width="1">
+                    </colgroup>
+                    <tfoot>
+                        <tr>
+                        <td class="a-right" colspan="1" style="">
+                             <strong>Общая</strong>
+                        </td>
+                        <td class="a-right" style="">
+                            <strong>
+                                <span class="price">{{ total_price|number_format(2, '.', ',') }}</span>
+                            </strong>
+                        </td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                    <tr>
+                    <td class="a-right" colspan="1" style=""> Итого </td>
+                    <td class="a-right" style="">
+                        <span class="price">{{ total_price|number_format(2, '.', ',') }}</span>
+                    </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    <ul class="checkout-types">
+                        <li>
+                            <button class="button btn-proceed-checkout btn-checkout" 
+                                    title="Продолжить заказ" type="button">
+                                <span>
+                                    <span>Продолжить заказ</span>
+                                </span>
+                                </button>
+                        </li>
+                    <li>
+                    <a title="Продолжить заказ" 
+                       href="">Продолжить заказ</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            {% endif %}
+    </div>
+{% endblock %}
+{% block right %}  
+{% endblock %}
