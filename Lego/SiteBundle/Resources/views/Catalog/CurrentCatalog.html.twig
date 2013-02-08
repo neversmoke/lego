@@ -6,50 +6,41 @@
 </div>
         
    <div class="toolbar">
-   {# <div class="pager">
-        <p class="amount">
-                            
-                    </p>
-
-        <div class="limiter jqtransformdone">
-            <label style="cursor: pointer;">Show</label>
-           <div style="z-index: 10; width: 40px;" class="jqTransformSelectWrapper filter_limit"><div><span style="width: 6px;">
-                    10                </span><strong class="jqTransformSelectOpen filter_limit_open"></strong></div>
-                   <ul style="width: 38px; display: none; visibility: visible;"><li><a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=5&amp;mode=list" index="0">
-                    5                </a></li><li><a class="selected" href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=10&amp;mode=list" index="1">
-                    10                </a></li><li><a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=15&amp;mode=list" index="2">
-                    15                </a></li><li><a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=20&amp;mode=list" index="3">
-                    20                </a></li><li><a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=25&amp;mode=list" index="4">
-                    25                </a></li></ul><select style="" class="jqTransformHidden" onchange="setLocation(this.value)">
-                            <option value="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=5&amp;mode=list">
-                    5                </option>
-                            <option value="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=10&amp;mode=list" selected="selected">
-                    10                </option>
-                            <option value="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=15&amp;mode=list">
-                    15                </option>
-                            <option value="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=20&amp;mode=list">
-                    20                </option>
-                            <option value="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=25&amp;mode=list">
-                    25                </option>
-                        </select></div> 
-        </div>
-
-        
-    
-    
-
-    
-    
-
-    </div>#}
-
+  
         <div class="sorter">
-               {# <p class="view-mode">
-                                    <label>View as:</label>
-                                                <a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;mode=grid" title="Grid" class="grid">Grid</a>&nbsp;
-                                                                <strong title="List" class="list">List</strong>&nbsp;
-                                                </p>#}
-            
+          <div class="limiter jqtransformdone" style="float:left">
+            <label style="cursor: pointer;">Показать:</label>
+           <div style="z-index: 10; width: 40px;" class="jqTransformSelectWrapper filter_limit">
+               <div>
+                   <span style="width: 6px;">
+                    10                
+                   </span>
+                       <strong class="jqTransformSelectOpen filter_limit_open"></strong>
+               </div>
+                   <ul style="width: 38px; display: none; visibility: visible;">
+                       <li>
+                           <a href="{{ path('catalog', { 'translit': entity.translit, 'coulonpage':'5' }) }}" index="0">
+                             5                
+                           </a>
+                       </li>
+                       <li>
+                           <a class="selected" href="{{ path('catalog', { 'translit': entity.translit, 'coulonpage':'10' }) }}" index="1">
+                             10                
+                           </a>
+                       </li>
+                       <li>
+                           <a href="{{ path('catalog', { 'translit': entity.translit, 'coulonpage':'15' }) }}" index="2">
+                             15       
+                           </a>
+                        </li>
+                        <li>
+                            <a href="{{ path('catalog', { 'translit': entity.translit, 'coulonpage':'20' }) }}" index="3">
+                                20        
+                            </a>
+                         </li>
+                      </ul>
+            </div> 
+       </div>    
         <div class="sort-by jqtransformdone">
             <label style="cursor: pointer;">Сортировать по</label>
             <div style="z-index: 10; width: 100px;" class="jqTransformSelectWrapper filter_sort">
@@ -119,6 +110,8 @@
             </li>
             {% endfor %}
         </ol>
-        
+        <div class="navigation" class = 'float_left'>
+            {{ knp_pagination_render(entities) | raw }}
+        </div>
 </div>
 {% endblock %}
