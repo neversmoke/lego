@@ -5,7 +5,7 @@
 <div class="nav-container">
     <ul id="nav">
         {% for entity in entities %}
-        <li class="level0 nav-1 first level-top"><a href="{{ path('catalog', { 'translit': entity.translit }) }}" class="level-top"><span>{{ entity.title }}</span></a></li>
+        <li class="level0 nav-1 first level-top"><a href="{{ path('catalog', { 'translit': entity.translit, 'sort':'kod' }) }}" class="level-top"><span>{{ entity.title }}</span></a></li>
         {% endfor %}
     </ul>
 </div>

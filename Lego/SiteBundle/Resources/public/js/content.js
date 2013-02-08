@@ -7,12 +7,20 @@ $( document ).ready(function() {
     else
         $('.contact-main').addClass('show');
     });
+    
+   $('.filter_sort_open').live('click', function(){
+        $('.filter_sort ul').toggle() ;
+    });  
+   $('.filter_limit_open').live('click', function(){
+        $('.filter_limit ul').toggle() ;
+    });  
+
    $('.btn-log').live('click', function(){
      if($('.account-login-home').hasClass('show'))
         $('.account-login-home').removeClass('show');
     else
         $('.account-login-home').addClass('show');
-    });  
+    });
 
  $('.slider').jcarousel({auto: 1, scroll: 1, wrap: 'circular' });
  $('#s4').before('<div id="nav_slides"><div id="nav_sl_wrap"></div></div>') .cycle({

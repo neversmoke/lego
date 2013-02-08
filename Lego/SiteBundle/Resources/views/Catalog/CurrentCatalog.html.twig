@@ -6,15 +6,16 @@
 </div>
         
    <div class="toolbar">
-    <div class="pager">
+   {# <div class="pager">
         <p class="amount">
                             
                     </p>
 
         <div class="limiter jqtransformdone">
             <label style="cursor: pointer;">Show</label>
-           <div style="z-index: 10; width: 40px;" class="jqTransformSelectWrapper"><div><span style="width: 6px;">
-                    10                </span><strong class="jqTransformSelectOpen"></strong></div><ul style="width: 38px; display: none; visibility: visible;"><li><a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=5&amp;mode=list" index="0">
+           <div style="z-index: 10; width: 40px;" class="jqTransformSelectWrapper filter_limit"><div><span style="width: 6px;">
+                    10                </span><strong class="jqTransformSelectOpen filter_limit_open"></strong></div>
+                   <ul style="width: 38px; display: none; visibility: visible;"><li><a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=5&amp;mode=list" index="0">
                     5                </a></li><li><a class="selected" href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=10&amp;mode=list" index="1">
                     10                </a></li><li><a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=15&amp;mode=list" index="2">
                     15                </a></li><li><a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;l=0&amp;limit=20&amp;mode=list" index="3">
@@ -40,7 +41,7 @@
     
     
 
-    </div>
+    </div>#}
 
         <div class="sorter">
                {# <p class="view-mode">
@@ -50,21 +51,34 @@
                                                 </p>#}
             
         <div class="sort-by jqtransformdone">
-            <label style="cursor: pointer;">Sort By</label>
-            <div style="z-index: 10; width: 100px;" class="jqTransformSelectWrapper"><div><span style="width: 6px;">
-                    Position                </span><strong class="jqTransformSelectOpen"></strong></div><ul style="width: 98px; display: none; visibility: visible;"><li><a class="selected" href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;dir=asc&amp;l=0&amp;mode=list&amp;order=position" index="0">
-                    Position                </a></li><li><a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;dir=asc&amp;l=0&amp;mode=list&amp;order=name" index="1">
-                    Name                </a></li><li><a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;dir=asc&amp;l=0&amp;mode=list&amp;order=price" index="2">
-                    Price                </a></li></ul><select style="" class="jqTransformHidden" onchange="setLocation(this.value)">
-                            <option value="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;dir=asc&amp;l=0&amp;mode=list&amp;order=position" selected="selected">
-                    Position                </option>
-                            <option value="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;dir=asc&amp;l=0&amp;mode=list&amp;order=name">
-                    Name                </option>
-                            <option value="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;dir=asc&amp;l=0&amp;mode=list&amp;order=price">
-                    Price                </option>
-                        </select></div>
-                            <a href="http://livedemo00.template-help.com/magento_41646/arts-crafts/drawing-art-supplies.html#%21___SID=U&amp;dir=desc&amp;l=0&amp;mode=list&amp;order=position" title="Set Descending Direction"><img src="../style/img/i_asc_arrow.gif" alt="Set Descending Direction" class="v-middle"></a>
+            <label style="cursor: pointer;">Сортировать по</label>
+            <div style="z-index: 10; width: 100px;" class="jqTransformSelectWrapper filter_sort">
+                    <div>
+                        <span style="width: 6px;">
+                            Позиции                
+                        </span>
+                        <strong class="jqTransformSelectOpen filter_sort_open"></strong>
                     </div>
+                    <ul style="width: 98px; display: none; visibility: visible;">
+                        <li>
+                            <a class="selected" href="{{ path('catalog', { 'translit': entity.translit, 'sort':'kod' }) }}" index="0">
+                                Позиции               
+                            </a>
+                         </li>
+                         <li>
+                             <a href="{{ path('catalog', { 'translit': entity.translit, 'sort':'title' }) }}" index="1">
+                                 Имени        
+                             </a>
+                         </li>
+                         <li>
+                             <a href="{{ path('catalog', { 'translit': entity.translit, 'sort':'price' }) }}" index="2">
+                                 Цене    
+                             </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                     </div>
     </div>
     </div>        
         
@@ -84,7 +98,7 @@
                      {{ product.title }}
                  </a></h2>
               <div class="desc std">
-                {{ product.description }}
+                {{ product.description|raw() }}
               </div>
               <div class="wrapper">   
                     <div class="price-box">
