@@ -9,7 +9,7 @@
         
     <form action="{{ path("fos_user_security_check") }}" method="post" id="login-form">
         <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
-        <input type="hidden" name="_route" value="{{ path('index') }}" />
+        <input type="hidden" name="_route_params" value="{{ path('index') }}" />
     <div class="col2-set">
       <div class="col-home">
         <div class="content">
