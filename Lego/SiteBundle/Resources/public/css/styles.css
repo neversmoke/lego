@@ -407,7 +407,7 @@ div.alert button:hover{ cursor:pointer; background-position:0 -9px;}
 .col1-layout .page-title { background:url(/bundles/legosite/img/page_title.gif) no-repeat; }
 
 .page-title h1,
-.page-title h2 { font-size:23px; color:#357DCD; font-family: 'Anton', Impact, sans-serif; text-transform:uppercase; margin:0; font-weight:bold;}
+.page-title h2 { font-size:23px; color:#357DCD; font-family: 'Anton', Impact, sans-serif; text-transform:uppercase; margin:0; }
 
 .page-title .separator { margin:0 3px; }
 .page-title .link-rss { float:right; }
@@ -678,7 +678,7 @@ tr.summary-details-excluded { font-style:italic; }
 
 .header_menu { padding:0 0 0 20px; }
 .header_menu li { float:left; font-family:'Anton', Impact, arial; font-size:19px; text-transform:uppercase; line-height:18px; }
-.header_menu li a { float:left; color:#fff; text-align:center; font-weight:bold;}
+.header_menu li a { float:left; color:#fff; text-align:center; }
 
 .link1 a { position:relative; z-index:1; margin:0 -7px 0 0; background:url(/bundles/legosite/img/link1.png) no-repeat; width:151px; height:57px; padding:35px 0 0 0; }
 .link2 a { position:relative; z-index:2; margin:0 -9px 0 0; background:url(/bundles/legosite/img/link2.png) no-repeat; width:154px; height:57px; padding:35px 0 0 0; }
@@ -935,7 +935,7 @@ div.itemSubMenu {margin-left:0px;}
 .block { margin:0 0 15px; }
 .block.last_block {margin-bottom:0;}
 .block .block-title {padding:17px 0 31px 23px; margin:0 0 0 -7px; background:url(/bundles/legosite/img/block_title3.png) no-repeat; }
-.block .block-title strong { font-size:23px; font-weight:bold; font-family: 'Anton', Impact, sans-serif; text-transform:uppercase; color:#fff; }
+.block .block-title strong { font-size:23px; font-weight:normal; font-family: 'Anton', Impact, sans-serif; text-transform:uppercase; color:#fff; }
 .block .block-title strong span { }
 .block .block-title a { text-decoration:none !important; }
 .block .block-subtitle { padding:0 0 10px 0; text-transform:uppercase; color:#0CA6C4; font-size:12px; font-weight:normal; }
