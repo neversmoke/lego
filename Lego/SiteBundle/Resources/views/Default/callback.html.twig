@@ -15,7 +15,10 @@
 	                              <div style="width: 294px;" class="jqTransformInputWrapper">
                                           <div class="jqTransformInputInner">
                                               <div>
-                                                  <input name="fio" id="name" title="Name" class="input-text required-entry jqtranformdone jqTransformInput" type="text"></div></div></div>
+                                              {{ form_widget(form.fio ,{ 'attr' : { 'size' : '40', 'onclick' : 'InputReset($(this))', 'class' : 'input-text required-entry validate-email jqtranformdone jqTransformInput'} }) }}    
+                                              </div>
+                                          </div>
+                                      </div>   
 	                          </div>
 	                      </div>
 	                      <div class="field">
@@ -23,7 +26,9 @@
 	                          <div class="input-box">
 	                              <div style="width: 294px;" class="jqTransformInputWrapper">
                                           <div class="jqTransformInputInner">
-                                              <div><input name="email" id="email" title="Email" class="input-text required-entry validate-email jqtranformdone jqTransformInput" type="text"></div></div></div>
+                                              <div>
+                                                  {{ form_widget(form.email,{ 'attr' : { 'size' : '40', 'onclick' : 'InputReset($(this))', 'class' : 'input-text required-entry validate-email jqtranformdone jqTransformInput' } })  }}
+                                              </div></div></div>
 	                          </div>
 	                      </div>
                             <div class="field last">
@@ -32,7 +37,9 @@
                                             <div style="width: 294px;" class="jqTransformInputWrapper">
                                                 <div class="jqTransformInputInner">
                                                     <div>
-                                                        <input name="telefon" id="telephone" title="Telephone" class="input-text jqtranformdone jqTransformInput" type="text"></div></div></div>
+                                                         {{ form_widget(form.telefon,{ 'attr' : { 'size' : '40', 'onclick' : 'InputReset($(this))', 'class' : 'input-text required-entry validate-email jqtranformdone jqTransformInput' } })  }}
+                                             
+                                                    </div></div></div>
                                     </div>
                             </div>
 	                  </li>
@@ -46,7 +53,8 @@
                                               <td id="jqTransformTextarea-tr"></td></tr>
                                           <tr><td id="jqTransformTextarea-ml">&nbsp;</td><td id="jqTransformTextarea-mm">
                                                   <div>
-                                                      <textarea name="body" id="comment" title="Comment" class="required-entry input-text jqtransformdone" cols="5" rows="3"></textarea>
+                                                      {{ form_widget(form.body,{ 'attr' : { 'cols' : '40', 'rows' : '10', 'class':'required-entry input-text jqtransformdone'} })  }}
+                                                      
                                                   </div></td><td id="jqTransformTextarea-mr">&nbsp;</td></tr><tr><td id="jqTransformTextarea-bl"></td><td id="jqTransformTextarea-bm"></td><td id="jqTransformTextarea-br"></td></tr></tbody></table>
 	                      </div>
 	                  </li>

@@ -1,6 +1,14 @@
 {% extends 'LegoSiteBundle::layout.html.twig' %} 
 {% block body %}
 <div class="col-main">
+          
+                                {% if message==1 %}
+    
+                                        <div class="std">
+                                            <h2>Письмо отправлено успешно! В ближайшее время вам ответят!</h2>
+                                        </div> 
+                                 
+                                {% endif %}
                                         <div class="std">
                                                 <div class="index_slider">
                                                         <div style="position: relative;" id="s4">
@@ -20,7 +28,7 @@
         
         
 
-      
+
 {% render 'MainSiteBundle:Catalog:TopSalesBlock' %}
       {% if entity.content!='' %}
         <div class="page-title"><h2>Информация</h2></div>   

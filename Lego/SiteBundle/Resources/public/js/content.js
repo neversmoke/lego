@@ -170,3 +170,6 @@ function Amount(edit){
     str = href.substring(0, href.length - href.split("/").slice(-1).length)
     $("#product_"+classes).attr('href', str+value);
 }
+function InputReset(input){
+    input.val('');
+};
