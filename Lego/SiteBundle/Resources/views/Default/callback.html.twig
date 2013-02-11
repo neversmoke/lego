@@ -7,6 +7,7 @@
 			    <div class="fieldset">
 	              <h2 class="legend">Информация</h2>
 	              <ul class="form-list">
+                          {% if auth!=1 %}
 	                  <li class="fields">
 	                      <div class="field">
 	                          <label for="name" class="required"><em>*</em>Имя</label>
@@ -25,16 +26,17 @@
                                               <div><input name="email" id="email" title="Email" class="input-text required-entry validate-email jqtranformdone jqTransformInput" type="text"></div></div></div>
 	                          </div>
 	                      </div>
-							<div class="field last">
-								<label for="telephone">Телефон</label>
-								<div class="input-box">
-									<div style="width: 294px;" class="jqTransformInputWrapper">
-                                                                            <div class="jqTransformInputInner">
-                                                                                <div>
-                                                                                    <input name="telefon" id="telephone" title="Telephone" class="input-text jqtranformdone jqTransformInput" type="text"></div></div></div>
-								</div>
-							</div>
+                            <div class="field last">
+                                    <label for="telephone">Телефон</label>
+                                    <div class="input-box">
+                                            <div style="width: 294px;" class="jqTransformInputWrapper">
+                                                <div class="jqTransformInputInner">
+                                                    <div>
+                                                        <input name="telefon" id="telephone" title="Telephone" class="input-text jqtranformdone jqTransformInput" type="text"></div></div></div>
+                                    </div>
+                            </div>
 	                  </li>
+                          {% endif %}
 	                  <li class="wide">
 	                      <label for="comment" class="required"><em>*</em>Коментарий</label>
 	                      <div class="input-box">
