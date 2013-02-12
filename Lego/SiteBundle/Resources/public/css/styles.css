@@ -2724,9 +2724,9 @@ width:19px;position:absolute;right:-20px;top:-9px;}
 .page_sl2.activeSlide { background:url(/bundles/legosite/img/page2.png) no-repeat 0 -20px; }
 .page_sl3.activeSlide { background:url(/bundles/legosite/img/page3.png) no-repeat 0 -16px; }
 
-.cl1 { background:url(/bundles/legosite/img/slider_pic1.jpg) no-repeat; width:764px; height:452px; }
-.cl2 { background:url(/bundles/legosite/img/slider_pic2.jpg) no-repeat; width:764px; height:452px; }
-.cl3 { background:url(/bundles/legosite/img/slider_pic3.jpg) no-repeat; width:764px; height:452px; }
+.cl1 {  width:764px; height:452px; }
+.cl2 {  width:764px; height:452px; }
+.cl3 {  width:764px; height:452px; }
 .btn_shop_now { padding:298px 0 0 465px; }
 .btn_shop_now a { display:block; background:url(/bundles/legosite/img/btn_shop_now.png) no-repeat; width:219px; height:62px; }
 
