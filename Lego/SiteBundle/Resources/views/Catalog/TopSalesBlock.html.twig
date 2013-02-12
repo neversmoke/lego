@@ -16,7 +16,7 @@
                                     </a>
                                 </h3>
                                 <a href="{{ path('product', { 'translit': entity.translit }) }}" 
-                                title="{{ entity.title }}" class="product-image fancybox">
+                                title="{{ entity.title }}" class="product-image">
                                     {% if entity.iconImage is not null %}
                                         <img src = '{{ vich_uploader_asset(entity, 'iconImage') }}' alt="{{ entity.title }}" width="200px" height="185px"/>
                                     {% else %}
