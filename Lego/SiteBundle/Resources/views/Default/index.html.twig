@@ -11,17 +11,17 @@
                                 {% endif %}
                                         <div class="std">
                                                 <div class="index_slider">
+                                                    {% if images|length > 0%}
                                                         <div style="position: relative;" id="s4">
-                                                        <div class="cl1">
-                                                        <div class="btn_shop_now"><a href="http://livedemo00.template-help.com/magento_41646/action-toys-figures.html"></a></div>
-                                                        </div> 
-                                                        <div class="cl2">
-                                                                <div class="btn_shop_now"><a href="http://livedemo00.template-help.com/magento_41646/dolls-soft-toys.html"></a></div>
+                                                        {% for image in images %}
+                                                            <div class="cl{{ loop.index }}" style="background:url('{{ vich_uploader_asset(image, 'image' ) }}') no-repeat scroll 0 0 transparent; width:764px; height:452px;">
+                                                                <div class="btn_shop_now" >
+                                                                    
+                                                                </div>
+                                                            </div> 
+                                                        {% endfor %}
                                                         </div>
-                                                        <div class="cl3">
-                                                                <div class="btn_shop_now"><a href="http://livedemo00.template-help.com/magento_41646/collectibles.html"></a></div>
-                                                        </div>
-                                                        </div>
+                                                     {% endif %}
                                                 </div>
                                         </div>
         
