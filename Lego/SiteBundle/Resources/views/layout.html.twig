@@ -3,9 +3,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
-	<meta name="author"  content="Qwer-team"/>
-	<meta name="copyright" content="&copy; Qwer-team"/>
+    <title>
+       {% if entity.getMetatitle is defined %}
+       {% if entity.getMetatitle is not empty %}
+            {{ entity.getMetatitle }}
+        {% else %}
+           Магазин игрушек
+        {% endif %}  
+       {% endif %}    
+    </title>
  {% block css %}
 
 <link href="{{ asset ( 'bundles/legosite/css/css.css' ) }}" rel="stylesheet" type="text/css"/>

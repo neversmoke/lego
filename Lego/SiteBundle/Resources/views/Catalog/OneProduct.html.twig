@@ -79,7 +79,7 @@
             <div class="box-collateral box-up-sell ">
                 <h2>Ключевые слова</h2>
                     {% for keyword in keywords %}
-                        {{ keyword.keyword }},
+                        <a href="{{ path('product_tag',{'keyword' : keyword.translit }) }}">{{ keyword.keyword }},
                     {% endfor %}
             </div>
             <br />
