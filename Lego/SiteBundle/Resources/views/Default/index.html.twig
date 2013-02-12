@@ -14,11 +14,12 @@
                                                     {% if images|length > 0%}
                                                         <div style="position: relative;" id="s4">
                                                         {% for image in images %}
+                                                         <a href="{{image.title}}">
                                                             <div class="cl{{ loop.index }}" style="background:url('{{ vich_uploader_asset(image, 'image' ) }}') no-repeat scroll 0 0 transparent; width:764px; height:452px;">
-                                                                <div class="btn_shop_now" >
-                                                                    
+                                                                <div class="btn_shop_now" >                                                                  
                                                                 </div>
                                                             </div> 
+                                                          </a>
                                                         {% endfor %}
                                                         </div>
                                                      {% endif %}
