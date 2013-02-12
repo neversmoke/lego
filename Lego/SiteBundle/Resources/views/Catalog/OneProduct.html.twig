@@ -5,7 +5,23 @@
         <div class="product-essential">
             <div id="product_addtocart_form">
                 <div class="product-shop">
-                    <div class="product-name"><h1>{{ entity.title }}</h1></div>
+                    <div class="product-name">
+                        <h1>{{ entity.title }}
+                            {% if entity.article!='' %}
+                                <span style="float:right; font-size:12px;">
+                                    Артикул: {{ entity.article }}
+                                </span>
+                            {% endif %}
+                        </h1>
+                            <br />
+                        {% if entity.count!='' %}
+                            <span style="float:left; font-size:12px;font-weight: bold; color:greenyellow">В наличие</span>
+                            {% else %}
+                            <span style="float:left; font-size:12px; font-weight: bold; color:red">Под заказ</span>
+                        {% endif %}
+                            <br />
+                            <br />
+                    </div>
                     <div class="short-description">
                         <div class="std">
                             {{ entity.description|raw() }}
@@ -39,7 +55,8 @@
                                 </a>
                                </div>
                             </div>
-                                <div class="more-views">
+                                {% if images|length > 0 %}
+                                <div class="more-views" id="slider_in_tov">
                                     <ul>
                                         {% for image in images %}
                                             <li>
@@ -49,14 +66,24 @@
                                             </li>
                                         {% endfor %}
                                     </ul>
-                                </div>
-                           
+                                        <br />
+                                </div> 
+                             {% endif %}
                         </div>
                     </div>
                     <div class="clearer"></div>
                     
             </div>
         </div>
+            {% if keywords|length > 0 %}
+            <div class="box-collateral box-up-sell ">
+                <h2>Ключевые слова</h2>
+                    {% for keyword in keywords %}
+                        {{ keyword.keyword }},
+                    {% endfor %}
+            </div>
+            <br />
+            {% endif %}
             <div class="product-collateral">
                 <div class="padder">
                     <div id="product_tabs_description_tabbed_contents">
@@ -67,10 +94,11 @@
                 </div>
             </div> 
     </div>
+        
+      {% if relatives|length > 0 %}  
         <div class="box-collateral box-up-sell ">
             <h2>Связанные товары</h2>
-            
-                
+             
             <ul class="products-ups">
                 {% for relative in relatives%}
                     {% if loop.index<4 %}
@@ -97,6 +125,7 @@
             {% endfor %}
             </ul>
         </div>
+        {% endif %}
 </div>
 
 

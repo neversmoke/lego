@@ -1452,7 +1452,7 @@ div.itemSubMenu {margin-left:0px;}
 .zoom-img img{opacity:0;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);}
 .ie-9 .zoom-img {display:none;}
 
-.zoom-inner{ width:300px; margin-bottom:10px; height:300px; position:relative;}
+.zoom-inner{ width:300px; margin-bottom:10px;  position:relative;}
 .more-views h2{ display:none;}
 /*** Product Collateral **/
 .product-essential {margin-bottom:0px; padding-bottom:25px;}

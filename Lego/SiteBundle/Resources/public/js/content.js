@@ -23,6 +23,7 @@ $( document ).ready(function() {
     });
 
  $('.slider').jcarousel({auto: 1, scroll: 1, wrap: 'circular' });
+ $('#slider_in_tov').jcarousel({auto: 1, scroll: 1, wrap: 'circular' });
  $('#s4').before('<div id="nav_slides"><div id="nav_sl_wrap"></div></div>') .cycle({
             fx: 'fade',
             speed: '1000',

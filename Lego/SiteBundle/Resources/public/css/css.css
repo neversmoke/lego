@@ -2,6 +2,36 @@
   font-family: 'Anton';
   src: url('/bundles/legosite/css/inpact.ttf');
 }
+
+.product-img-box #slider_in_tov{
+        width: 300px;
+        height: 91px;
+}
+#slider_in_tov > div{
+    
+	position: absolute;
+        overflow: hidden;
+        height: 100px;
+}
+section.main #slider_in_tov{
+	width: 300px;
+}
+#slider_in_tov ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10000px;
+	list-style: none;
+}
+#slider_in_tov ul li{
+	float: left;
+        width: 91px;
+        height: 91px;
+}
+#slider_in_tov ul li img{
+    width: 91px;
+    height: 91px;
+}
 .slider{
 	width: 220px;
 	position: relative;
