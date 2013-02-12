@@ -4,8 +4,9 @@
 }
 
 .product-img-box #slider_in_tov{
-        width: 300px;
-        height: 91px;
+        width: 309px;
+        height: 95px;
+        margin-top: 4px;
 }
 #slider_in_tov > div{
     
