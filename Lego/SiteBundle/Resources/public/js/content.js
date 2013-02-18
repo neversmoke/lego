@@ -67,7 +67,7 @@ $( document ).ready(function() {
         })
         .autocomplete({
             source: function( request, response ) {
-                $.getJSON( "/itc/ru/"+search_route+".json", {
+                $.getJSON( "/ru/auto/"+search_route+".json", {
                     term: extractLast( request.term ),
                     parameter: parameter
                 }, response );
