@@ -78,7 +78,7 @@
             <li class="item odd">
                 <div class="list-inner">
                     <a class="product-image" title="" href="{{ path('product', { 'translit': product.translit }) }}">
-                    <img class="pr-img" width="170" height="170" alt="Alex Art Box - Wooden Art Center with Assorted Media" src="{{ vich_uploader_asset(product, 'iconImage') }}" />
+                    {% if entity.icon!='' %}<img class="pr-img" width="170" height="170" alt="Alex Art Box - Wooden Art Center with Assorted Media" src="{{ vich_uploader_asset(product, 'iconImage') }}" />{% endif %}
                     </a>
                 </div>
                     

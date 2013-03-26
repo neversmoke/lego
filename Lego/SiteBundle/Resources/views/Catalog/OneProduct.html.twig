@@ -50,9 +50,9 @@
                         <div class="zoom-inner">
                             <div class="product-image"> 
                               <div id="wrap" style="top:0px;z-index:98;position:relative;">
-                                <a id="" class="fancybox" rel="1" href="{{ vich_uploader_asset(entity, 'iconImage') }}" style="position: relative; display: block;">
-                                    <img src = '{{ vich_uploader_asset(entity, 'iconImage') }}' width="298px" height="298px"/>
-                                </a>
+                                 {% if entity.icon!='' %}<a id="" class="fancybox" rel="1" href="{{ vich_uploader_asset(entity, 'iconImage') }}" style="position: relative; display: block;">
+                                   <img src = '{{ vich_uploader_asset(entity, 'iconImage') }}' width="298px" height="298px"/>
+                                </a>{% endif %}
                                </div>
                             </div>
                                 {% if images|length > 0 %}
