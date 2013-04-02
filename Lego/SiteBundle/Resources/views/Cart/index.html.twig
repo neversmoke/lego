@@ -41,9 +41,11 @@
                                 {% for product in products %}
                                 <tr class="first odd">
                                     <td class="prod-cart">
-                                    <a class="product-image fancybox" title="{{ product.title }}" href="{{ vich_uploader_asset(product, 'iconImage') }}">
-                                        <img width="84" height="84" alt="{{ product.title }}" src="{{ vich_uploader_asset(product, 'iconImage') }}">
-                                    </a>
+                                    {% if product.icon!='' %}
+                                        <a class="product-image fancybox" title="{{ product.title }}" href="{{ vich_uploader_asset(product, 'iconImage') }}">
+                                            <img width="84" height="84" alt="{{ product.title }}" src="{{ vich_uploader_asset(product, 'iconImage') }}">
+                                        </a>
+                                    {% endif %}
                                     </td>
                                     <td>
                                         <h2 class="product-name">
@@ -53,7 +55,7 @@
                                         </h2>
                                     </td>
                                     <td class="a-center edit">
-                                        <a title="Edit item parameters" id="product_cart_{{ product.id }}"  href="{{ path('main_site_cart_add', {'id':product.id, 'amount': 3}) }}">
+                                        <a title="Edit item parameters" id="product_cart_{{ product.id }}"  href="{{ path('add_to_cart', {'id':product.id, 'amount': 3}) }}">
                                             Edit
                                         </a>
                                     </td>
@@ -71,7 +73,7 @@
                                         </span>
                                     </td>
                                     <td class="a-center last">
-                                        <a class="btn-remove btn-remove2" title="Remove item" href="{{ path('main_site_cart_remove', {'id':product.id}) }}">
+                                        <a class="btn-remove btn-remove2" title="Remove item" href="{{ path('remove_cart_item', {'id':product.id}) }}">
                                             Удалить
                                         </a>
                                     </td>
