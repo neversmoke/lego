@@ -2,6 +2,8 @@
 
 {% block right %}  
 {% endblock %}
+{% block top %}  
+{% endblock %}
 
 {% block body %}
     <div class="account-create">
@@ -10,7 +12,7 @@
         </div>
              {% if user!=""%}
               
-            <form action="{{ path('update_usercab', {'id':user.id}) }}" method="post" {{ form_enctype(form) }}  id="form-validate">
+            <form action="{{ path('update_usercab', {'id':user.id}) }}" method="post" {{ form_enctype(edit_form) }}  id="form-validate">
                 <div class="fieldset">
                     <h2 class="legend">Персональная информация</h2>
                     <ul class="form-list">
@@ -22,7 +24,7 @@
                                         Имя
                                     </label>
                                         <div class="input-box">
-                                            {{ form_widget(form['name']) }}
+                                            {{ form_widget(edit_form['name']) }}
                                         </div>
                                 </div>
                                 <div class="field name-lastname">
@@ -31,7 +33,7 @@
                                         Фамилия
                                     </label>
                                     <div class="input-box">
-                                        {{ form_widget(form['surname']) }}
+                                        {{ form_widget(edit_form['surname']) }}
                                     </div>
                                 </div>
                             </div>
@@ -44,7 +46,7 @@
                                         Отчество
                                     </label>
                                         <div class="input-box">
-                                            {{ form_widget(form['patronymic']) }}
+                                            {{ form_widget(edit_form['patronymic']) }}
                                         </div>
                                 </div>
                                 <div class="field name-lastname">
@@ -53,7 +55,7 @@
                                         Почта
                                     </label>
                                     <div class="input-box">
-                                        {{ form_widget(form['email']) }}
+                                        {{ form_widget(edit_form['email']) }}
                                     </div>
                                 </div>
                             </div>
@@ -66,7 +68,7 @@
                                         Телефон
                                     </label>
                                         <div class="input-box">
-                                            {{ form_widget(form['tel']) }}
+                                            {{ form_widget(edit_form['tel']) }}
                                         </div>
                                 </div>
                                 <div class="field name-lastname">
@@ -75,7 +77,7 @@
                                         Адрес
                                     </label>
                                     <div class="input-box">
-                                        {{ form_widget(form['address']) }}
+                                        {{ form_widget(edit_form['address']) }}
                                     </div>
                                 </div>
                             </div>
@@ -83,7 +85,7 @@
                     </ul>
                 </div>    
 
-                    {{ form_row(form._token) }} 
+                    {{ form_row(edit_form._token) }} 
             </form>
             
             <div class="buttons-set">

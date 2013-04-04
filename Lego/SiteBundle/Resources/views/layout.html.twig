@@ -87,6 +87,7 @@
  </div>
         <div class="main-container col2-left-layout">
             <div class="main">
+                {% block top %}
                 <div>
                      <div style="float:left">
                          {% render 'MainSiteBundle:Catalog:NoveltyBlock' %}
@@ -98,6 +99,7 @@
                          {% render 'MainSiteBundle:Catalog:TopSalesSlider' %}
                      </div>
                 </div>
+                {% endblock %}
      {% block body %}
         {% endblock%}                        
  {% block right %}                   

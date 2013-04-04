@@ -1,29 +1,5 @@
-/**
- * Magento
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Academic Free License (AFL 3.0)
- * that is bundled with this package in the file LICENSE_AFL.txt.
- * It is also available through the world-wide-web at this URL:
- * http://opensource.org/licenses/afl-3.0.php
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@magentocommerce.com so we can send you a copy immediately.
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade Magento to newer
- * versions in the future. If you wish to customize Magento for your
- * needs please refer to http://www.magentocommerce.com for more information.
- *
- * @category    design
- * @package     default_blank
- * @copyright   Copyright (c) 2011 Magento Inc. (http://www.magentocommerce.com)
- * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
- */
 
-/* Reset ================================================================================= */
+
 * { margin:0; padding:0; }
 html {
     height: 100%;
@@ -143,6 +119,16 @@ ul,ol         { list-style:none; }
 
 /* Global Styles ========================================================================= */
 /* Form Elements */
+input, select, textarea {
+    background: none repeat scroll 0 0 #FCFCFC;
+    border: 1px solid #D4D4D4;
+}
+input, textarea {
+    padding: 3px 2px 4px;
+}
+.input-box input {
+    width: 333px;
+}
 input,select,textarea,button { font:12px Arial, Helvetica, sans-serif; vertical-align:middle; color:#000; }
 input.input-text,select,textarea { background:#fcfcfc; border:1px solid #d4d4d4; }
 input.input-text,textarea { padding:3px 2px 4px 2px; }
