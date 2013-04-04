@@ -16,7 +16,7 @@
 .product-collateral:after { content:"."; display:block; clear:both; font-size:0; line-height:0; height:0; overflow:hidden; zoom: 1}
 #product_tabs_description_tabbed_contents{ padding:20px; border:1px solid #ededed; border-radius:0 0 2px 2px; background:#fbfbfb;}
 #product_tabs_description_tabbed_contents h2{ display:none;}
-#product_tabs_description_tabbed_contents .std{ color:#afafaf; font-size:12px; line-height:18px;}
+#product_tabs_description_tabbed_contents .std{ color:black; font-size:12px; line-height:18px;}
 #product_tabs_upsell_products_tabbed_contents{padding:20px; border:1px solid #ededed; border-radius:0 0 2px 2px; background:#fbfbfb;}
 #product_tabs_tags_tabbed_contents{padding:10px 20px 20px 20px; border:1px solid #ededed; border-radius:0 0 2px 2px; background:#fbfbfb;}
 #product_tabs_review_tabbed_contents{padding:20px; border:1px solid #ededed; border-radius:0 0 2px 2px; background:#fbfbfb;}

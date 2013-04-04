@@ -659,9 +659,9 @@ tr.summary-details-excluded { font-style:italic; }
 .header .links li a {display:inline-block;color:#fff;}
 .header .links li a:hover {color:#FBDB03;}
 .header .links  #FME-contact-form{ display:none;}
-.header .form-search { float:right; background:url(/bundles/legosite/img/bg_search.png) no-repeat; width:325px; height:35px; padding:0 30px 0 17px; margin:0 -2px 25px 0; }
+.header .form-search { float:right; background:url(/bundles/legosite/img/bg_search.png) no-repeat; width:212px; height:35px; padding:0 30px 0 17px; margin:0 -2px 25px 0; }
 .header .form-search label { float:left; padding:3px 11px 0 0; font-family:'Anton', Impact, arial; font-size:16px; text-transform:uppercase; color:#fff; }
-.header .form-search .input-text { float:left; background:none; border:0; width:218px; height:18px; margin:3px 0 0 0; padding:0; line-height:18px; color:#fff; }
+.header .form-search .input-text { float:left; background:none; border:0; width:134px; height:18px; margin:3px 0 0 0; padding:0; line-height:18px; color:#fff; }
 .header .form-search .btn_search { float:right; margin:3px 0 0 0; background:url(/bundles/legosite/img/btn_search.png) no-repeat; width:18px; height:19px; border:0; cursor:pointer; }
 .header .form-search .search-autocomplete img{ float:left; margin-right:10px; margin-bottom:10px;}
 .header .form-search .search-autocomplete { z-index:999; }
@@ -1218,7 +1218,7 @@ div.itemSubMenu {margin-left:0px;}
 .price-box.map-info a{ text-decoration:none; padding-left:4px; color:#0CA6C4; }
 .price-box.map-info a:hover{ color:#000;}
 .products-grid.last { border-bottom:0; }
-.products-grid li.item { float:left; width:203px; padding:16px 18px 0px 18px; border:1px solid #ededed; margin-bottom:20px; margin-right:20px; }
+.products-grid li.item { float:left; width:203px; padding:16px 10px 0px 18px; margin-top:120px; border:1px solid #ededed; margin-bottom:20px; margin-right:20px; }
 .products-grid li.last{ margin-right:0;}
 .products-grid .product-image { display:block; width:203px; height:203px; margin:0 0 0px; }
 .grid-inner{width:203px; height:203px; position:relative; padding-bottom:5px;}
@@ -1272,7 +1272,7 @@ div.itemSubMenu {margin-left:0px;}
 .products-list .price-box {margin:5px 13px 16px 0; overflow:hidden; float:left; min-width:200px; }
 .products-list .price-box .regular-price{ float:left; padding-right:12px;}
 .products-list .availability { float:left; margin:3px 0 0; }
-.products-list .desc { clear:both; padding:10px 0 0; margin:0 0 15px; line-height:18px; font-size:12px; color:#b2b2b2; }
+.products-list .desc { clear:both; padding:10px 0 0; margin:0 0 15px; line-height:18px; font-size:12px; color:black; }
 .products-list .desc > p{ float:left;}
 .products-list .desc > p strong{ color:#0CA6C4;}
 .products-list .desc .link-learn { font-size:12px; font-weight:bold; color:#888787; text-decoration:underline;background:url(/bundles/legosite/img/marker-link.png) right 6px no-repeat; padding-right:12px;}
@@ -1501,7 +1501,7 @@ div.itemSubMenu {margin-left:0px;}
 .col3-layout .product-view .product-shop { float:none; width:auto; }
 .product-view .product-name {}
 .product-view .short-description h2 { display:none;}
-.product-view .short-description .std{ font-size:12px; color:#7f7f7f; line-height:18px;}
+.product-view .short-description .std{ font-size:12px; color:black; line-height:18px;}
 .product-view .product-shop .product-pricing {margin-bottom:15px; margin-top:10px; overflow:hidden;}
 .product-view .product-shop .product-pricing li {background:#f4f4f4; float:left; clear:left; line-height:22px; padding:0 13px; font-size:11px; margin-bottom:3px; }
 .product-view .product-shop .product-pricing li .benefit {}

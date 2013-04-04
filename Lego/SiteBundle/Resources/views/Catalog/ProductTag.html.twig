@@ -12,42 +12,46 @@
 
     </div>        
         
-        <ol id="products-list" class="products-list">
-            {% for product in entities %}
-            <li class="item odd">
-                <div class="list-inner">
-                    <a class="product-image" title="" href="">
-                    <img class="pr-img" width="170" height="170" alt="Alex Art Box - Wooden Art Center with Assorted Media" src="{{ vich_uploader_asset(product, 'iconImage') }}" />
-                    </a>
-                </div>
-                    
-                    
-           <div class="product-shop">
-            <div class="f-fix">
-             <h2 class="product-name"><a href="{{ path('product', { 'translit': product.translit }) }}">
-                     {{ product.title }}
-                 </a></h2>
-              <div class="desc std">
-                {{ product.description|raw() }}
-              </div>
-              <div class="wrapper">   
-                    <div class="price-box">
-                        <span id="product-price-14" class="regular-price">
-                              <span class="price">{{ product.price }} грн.</span>
-                        </span>
+        <ul class="products-grid last even">
+                    {% for product in entities %}
+                    {% set class %}
+                    {% if loop.index <= 3 %}
+                        style="margin-top:0px;"
+                    {% endif %}
+                    {% endset %}
+                    <li class="item" {{ class }}>
+                        <h2 class="product-name product-name-height">
+                            <a href="{{ path('product', { 'translit': product.translit }) }}">
+                                 {{ product.title }}
+                             </a>
+                        </h2>
+                        <div class="desc std" style="color: black;">
+                            Артикул: {{ product.article }}
+                        </div>
+                    <div class="grid-inner">
+                        <a class="product-image" title="" href="{{ path('product', { 'translit': product.translit }) }}">
+                        {% if product.icon!='' %}
+                                <img class="pr-img" width="203" height="203" alt="" 
+                                     src="{{ vich_uploader_asset(product, 'iconImage') }}" />
+                        {% endif %}
+                        </a>
+                    <div class="product-box-2">
+                    <div class="product-atr-height" style="height: 58px;">
+                        <div class="price-box">
+                            <span id="product-price-1" class="regular-price">
+                            <span class="price">{{ product.price }} грн.</span> </span>
+                        </div>
                     </div>
-              </div>
-               <div class="row-list">
-                   <p class="list-btn">
-                     <a href="{{path('add_to_cart', {'id':product.id, 'amount': 1})}}">
-                      <button class="button btn-cart" title="Add to Cart" type="button"><span><span>В корзину</span></span></button>
-                     </a>
-                    </p>
-                </div>
-              </div>
-        </div>
-            </li>
-            {% endfor %}
-        </ol>
+                        <div class="actions">
+                            <button class="button" title="" type="button"><span><span>Купить</span></span></button>
+                        <ul class="add-to-links">
+                            <div id="results"></div>
+                        </li>
+                        </ul>
+                        </div>
+                    </div>
+                    </li>
+                    {% endfor %}
+        </ul>
 </div>
 {% endblock %}

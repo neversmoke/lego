@@ -1,0 +1,29 @@
+
+<div class="block block-list block-compare">
+    <div class="block-title">
+        <strong><span>Фильтр</span></strong>
+    </div>
+    <div class="block-content" id="">
+         <ul>
+            <li>
+                    <form action="{{ path('accept_filter') }}" method="post" {{ form_enctype(form) }}>
+                        <h2>Цена:</h2>
+                        От:{{ form_widget(form.from_price) }}<br />
+                        До:{{ form_widget(form.to_price) }}
+                        <h2>Возраст:</h2>
+                            {% for one in age %}
+                                <div style="float:left; margin-left: 5px;"><input type="checkbox" name="colection_age[{{ one.id }}]" value="{{ one.id }}"/> {{ one.name }}</div>
+                            {% endfor %}
+                        <h2>Модель:</h2>
+                        {{ form_widget(form.collection_group) }}
+                        {{ form_widget(form._token) }}
+                        <br />
+                        <br />
+                        <p>
+                            <button type="submit">Фильтровать</button>
+                        </p>
+                    </form>
+            </li>
+         </ul>
+    </div>
+</div>
