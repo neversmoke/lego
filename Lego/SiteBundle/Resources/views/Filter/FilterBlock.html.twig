@@ -7,20 +7,26 @@
          <ul>
             <li>
                     <form action="{{ path('accept_filter') }}" method="post" {{ form_enctype(form) }}>
-                        <h2>Цена:</h2>
-                        От:{{ form_widget(form.from_price) }}<br />
-                        До:{{ form_widget(form.to_price) }}
-                        <h2>Возраст:</h2>
+                        <h3>Цена:</h3>
+                        От:{{ form_widget(form.from_price) }}
+                        До:{{ form_widget(form.to_price) }}<br />
+                        <h3>Возраст:</h3>
                             {% for one in age %}
                                 <div style="float:left; margin-left: 5px;"><input type="checkbox" name="colection_age[{{ one.id }}]" value="{{ one.id }}"/> {{ one.name }}</div>
                             {% endfor %}
-                        <h2>Модель:</h2>
+                        <br />
+                        <h3>Модель:</h3>
+                        <div class="filter_sort">
                         {{ form_widget(form.collection_group) }}
+                        </div>
                         {{ form_widget(form._token) }}
                         <br />
-                        <br />
                         <p>
-                            <button type="submit">Фильтровать</button>
+                            <button id="empty_cart_button" class="button btn-empty" type="submit" name="update_cart_action" value="empty_cart" title="Очистить корзину">
+                                <span>
+                                    <span> Фильтровать </span>
+                                </span>
+                            </button>
                         </p>
                     </form>
             </li>
