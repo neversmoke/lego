@@ -7,7 +7,6 @@
 			    <div class="fieldset">
 	              <h2 class="legend">Информация</h2>
 	              <ul class="form-list">
-                          {% if auth!=1 %}
 	                  <li class="fields">
 	                      <div class="field">
 	                          <label for="name" class="required"><em>*</em>Имя</label>
@@ -43,7 +42,6 @@
                                     </div>
                             </div>
 	                  </li>
-                          {% endif %}
 	                  <li class="wide">
 	                      <label for="comment" class="required"><em>*</em>Коментарий</label>
 	                      <div class="input-box">
@@ -57,6 +55,7 @@
                                                       
                                                   </div></td><td id="jqTransformTextarea-mr">&nbsp;</td></tr><tr><td id="jqTransformTextarea-bl"></td><td id="jqTransformTextarea-bm"></td><td id="jqTransformTextarea-br"></td></tr></tbody></table>
 	                      </div>
+                              {{ form_widget(form._token) }}
 	                  </li>
 	              </ul>
 	          </div>
