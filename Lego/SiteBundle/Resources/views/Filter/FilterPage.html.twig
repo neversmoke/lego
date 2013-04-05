@@ -42,7 +42,13 @@
                         </div>
                     </div>
                         <div class="actions">
-                            <button class="button" title="" type="button"><span><span>Купить</span></span></button>
+                            <a href="{{path('add_to_cart', {'id':product.id, 'amount': 1})}}">
+                                <button class="button" title="" type="button">
+                                    <span>
+                                        <span>Купить</span>
+                                    </span>
+                                </button>
+                            </a>
                         <ul class="add-to-links">
                             <div id="results"></div>
                         </li>
