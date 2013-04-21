@@ -3,25 +3,32 @@
     <div class="block-title">
         <strong><span>Фильтр</span></strong>
     </div>
-    <div class="block-content" id="">
+    <div class="" id="">
          <ul>
             <li>
-                    <form action="{{ path('accept_filter') }}" method="post" {{ form_enctype(form) }}>
-                        <h3>Цена:</h3>
-                        От:{{ form_widget(form.from_price) }}
-                        До:{{ form_widget(form.to_price) }}<br />
-                        <h3>Возраст:</h3>
+                    <form action="{{ path('accept_filter') }}" method="post" {{ form_enctype(form) }} style="color:darkmagenta;">
+                        <p> 
+                        <h4>Возраст:</h4>
                             {% for one in age %}
-                                <div style="float:left; margin-left: 5px;"><input type="checkbox" name="colection_age[{{ one.id }}]" value="{{ one.id }}"/> {{ one.name }}</div>
+                                <div style="float:left; margin-left: 5px;">
+                                    <input type="checkbox" name="colection_age[{{ one.id }}]" value="{{ one.id }}"/>
+                                     {{ one.name }}
+                                </div>
                             {% endfor %}
+                        </p>
                         <br />
-                        <h3>Модель:</h3>
+                        <p style="margin-top:10px;">
+                        <h4  style="margin-top:10px;">Серия:</h4>
                         <div class="filter_sort">
                         {{ form_widget(form.collection_group) }}
                         </div>
                         {{ form_widget(form._token) }}
-                        <br />
-                        <p>
+                        </p><p  style="margin-top:10px;">
+                        <h4>Цена:</h4>
+                        От:{{ form_widget(form.from_price) }}
+                        До:{{ form_widget(form.to_price) }}
+                        </p>
+                        <p style="margin-top:10px;">
                             <button id="empty_cart_button" class="button btn-empty" type="submit" name="update_cart_action" value="empty_cart" title="Очистить корзину">
                                 <span>
                                     <span> Фильтровать </span>
