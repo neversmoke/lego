@@ -20,6 +20,20 @@ class FilterController extends ControllerHelper {
     protected $age = 'ItcAdminBundle:Template\AttributeResource';
     protected $group = 'ItcAdminBundle:Product\ProductGroup';
 
+        public function getProductsTemplate(){
+        
+        $em = $this->getDoctrine()->getEntityManager();
+        
+        $entity=$em->getRepository('ItcAdminBundle:Product\ProductAttribute')
+                       ->createQueryBuilder('P')
+                       ->select('P, R.name')
+                       ->InnerJoin('ItcAdminBundle:Template\AttributeResource', 
+                               'R', 'WITH', 'P.attribute_resource_id=R.id')
+                       ->getQuery()
+                       ->execute();
+        
+        return $entity;
+    }
     /**
      * @Template()
      */
@@ -78,9 +92,10 @@ class FilterController extends ControllerHelper {
                            $product->AndWhere("P.price >= :from")
                                    ->setParameter("from", $from_price);
         $product=$product->getQuery()->execute();
-        
+        $atributs = $this->getProductsTemplate();
         return array(
-            'entities' =>$product
+            'entities' =>$product,
+            'atributs' => $atributs
         );
     }
 

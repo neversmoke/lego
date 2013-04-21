@@ -83,41 +83,16 @@
             {% set routing = "index" %}
             {% render "MainSiteBundle:Default:menu" with {"routing" : routing, "req" : app.request}  %}
 
-        {% endblock %}        </div>
+        {% endblock %} 
+        </div>
  </div>
         <div class="main-container col2-left-layout">
             <div class="main">
-                {% block top %}
-                <div>
-                     <div style="float:left">
-                         {% render 'MainSiteBundle:Catalog:NoveltyBlock' %}
-                     </div>
-                     <div style="margin-left:100px;float:left">
-                         {% render 'MainSiteBundle:Catalog:BestSellerBlock' %}
-                     </div>
-                     <div style="margin-left:100px;float:left">
-                         {% render 'MainSiteBundle:Catalog:TopSalesSlider' %}
-                     </div>
-                </div>
-                {% endblock %}
      {% block body %}
         {% endblock%}                        
  {% block right %}                   
 <div class="col-left sidebar">
-    <div class="header">   
-    <form id="search_mini_form" action="{{ path('search_in_site') }}" method="POST">
-        <div class="form-search">
-            <label for="search">Поиск:</label>
-                <input autocomplete="on" id="search" name="q" class="input-text search_with_param w100per" type="text"  
-                            data-link=".search_product_id"
-                            data-type-link="input"
-                            data-route="ajax_search_product"
-                            data-id_prod="1"/>
-                <input type="hidden" name="productid" class="auto_prod_id" value=""/>
-                <input value="" class="btn_search" type="submit" />
-                <div style="display: none;" id="search_autocomplete" class="search-autocomplete"></div>
-	</div>
-        </form>
+    <div class="header"> 
      </div>
 {% render 'LegoSiteBundle:Filter:FilterBlock' %}
 {% render 'MainSiteBundle:Catalog:CategoriesBlock' %}

@@ -12,7 +12,7 @@
 
     </div>        
         
-        <ul class="products-grid last even">
+       {# <ul class="products-grid last even">
                     {% for product in entities %}
                     {% set class %}
                     {% if loop.index <= 3 %}
@@ -52,6 +52,47 @@
                     </div>
                     </li>
                     {% endfor %}
-        </ul>
+        </ul>#}
+<div class="category-products"> 
+	
+{% for entity in entities %}
+<div class="tovar">
+	<div class="allimgslidetovar">
+		<div class="imgslidetovar">
+                    <a href="{{ path('product', { 'translit': entity.translit }) }}" 
+                                title="{{ entity.title }}" class="product-image">
+                                    {% if entity.iconImage is not null %}
+                                        <img src = '{{ vich_uploader_asset(entity, 'iconImage') }}'  class="imagecache imagecache-product"
+                                             alt="{{ entity.title }}" width="116" height="110"/>
+                                    {% else %}
+                                        <img src = '{{ entity.smallIcon }}' alt="{{ entity.title }}"  class="imagecache imagecache-product"
+                                             width="116" height="110"/>
+                                    {% endif %}
+                                </a>  
+		</div>
+    </div>                     
+                                                            
+	<p class="brdr">
+             <a href="{{ path('product', { 'translit': entity.translit }) }}" title="{{ entity.title }}">
+                                        {{ entity.title }}
+             </a>
+	</p>
+
+	<div class="blk2">
+		<p class="price">{{ entity.price }} грн.</p>        
+		<p class="val"> {{ entity.article }}  
+                {% for attribut in atributs %}
+                      {% if attribut[0].productId == entity.id %}
+                        {{ attribut.name }}
+                      {% endif %}
+                {% endfor %}
+                </p>
+		<p class="linker">
+		  <a href="{{path('add_to_cart', {'id':entity.id, 'amount': 1})}}">Купить</a>  
+		</p>
+	</div>
+</div>
+{% endfor %}
+</div>
 </div>
 {% endblock %}

@@ -2734,7 +2734,57 @@ width:19px;position:absolute;right:-20px;top:-9px;}
 #from_price, #to_price{ border:1px solid #d4d4d4; height:20px; text-align:center; color:#7e7e7e; font-size:12px; width:40px!important;}
 
 
+contact_lbl {position:absolute; margin: 29px 0 0 400px;  color:#fff; font: bold 26px "Arial Narrow",Arial;}
+.contact_lbl .tel_life { background:url(/bundles/legosite/img/tel_life.png) no-repeat 4px 2px;; padding:0 0 0 28px;}
+.contact_lbl .tel_mts { background:url(/bundles/legosite/img/tel_mts.png) no-repeat 0px 3px; padding:0 0 0 28px;}
 
+.header_menu .form-search { float:right; background:url(/bundles/legosite/img/bg_search2.png) no-repeat; width:225px; height:35px; padding:0 30px 0 17px; margin:38px 10px 0px 0; }
+.header_menu .form-search .input-text { float:left; background:none; border:0; width:118px; height:18px; margin:10px 0 0 0; padding:0; line-height:18px; color:#fff; }
+.header .form-search label { float:left; padding:11px 11px 0 0; font-family:'Anton', Impact, arial; font-size:16px; text-transform:uppercase; color:#fff; }
+.header .form-search .btn_search { float:right; margin:11px 0 0 0; background:url(/bundles/legosite/img/btn_search.png) no-repeat; width:18px; height:19px; border:0; cursor:pointer; }
+
+.tovar { 
+    border: 1px dotted #DB0052;
+    float: left;
+    margin-bottom: 8px;
+    margin-right: 5px;
+    position: relative;
+    width: 180px;
+}
+.tovar p.brdr {
+    border-top: 1px dotted #DB0052;
+    height: 45px;
+    margin-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+.tovar p.val span {
+    color: #4B1500;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.tovar p.brdr a {
+    color: #DB0052;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+}
+.tovar p.linker a {
+    background: url("/bundles/legosite/img/cart.png") no-repeat scroll left -2px transparent;
+    color: #608802;
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 22px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.tovar .blk2 {padding:5px; }
+.tovar .blk2 .price{ font-weight:bold; text-align:right; color:#000; }
+.tovar .blk2 .val{ font-size:11px; }
 
 
 
