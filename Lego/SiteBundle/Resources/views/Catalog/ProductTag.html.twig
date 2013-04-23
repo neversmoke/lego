@@ -95,6 +95,11 @@
 		<p class="linker">
 		  <a href="{{path('add_to_cart', {'id':entity.id, 'amount': 1})}}">Купить</a>  
 		</p>
+		{% if auth==1 %}
+                <p class="linker">
+		  <a href="{{path('add_to_cart_discount', {'id':entity.id, 'amount': 1})}}">Купить со скидкой</a>  
+		</p>
+                {% endif %}
 	</div>
 </div>
 {% endfor %}

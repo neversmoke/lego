@@ -61,7 +61,7 @@
                                     </td>
                                     <td class="a-right">
                                         <span class="cart-price">
-                                            <span class="price">{{ cart[product.id].price }} грн.</span>
+                                            <span class="price">{{ cart[product.id].price-(cart[product.id].price*0.04)|number_format(0) }} грн.</span>
                                         </span>
                                     </td>
                                     <td class="a-center">
@@ -69,7 +69,13 @@
                                     </td>
                                     <td class="a-right">
                                         <span class="cart-price">
-                                            <span class="price">{{ cart[product.id].price*cart[product.id].amount|number_format(2, '.', ',') }} грн.</span>
+                                            {% if cart[product.id].discount!=1 %}
+                                            <span class="price">{{ cart[product.id].price*cart[product.id].amount|number_format(0) }} грн.</span>
+                                            {% else %}
+                                            <span class="price">
+                                                {{ (cart[product.id].price-(cart[product.id].price*0.04)|number_format(0))*cart[product.id].amount }} грн.
+                                            </span
+                                            {% endif %}
                                         </span>
                                     </td>
                                     <td class="a-center last">

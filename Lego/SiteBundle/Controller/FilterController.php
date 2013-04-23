@@ -97,7 +97,8 @@ class FilterController extends ControllerHelper {
         return array(
             'entities' =>$product,
             'atributs' => $atributs,
-            'groups'   => $groups
+            'groups'   => $groups,
+            'auth'     => $this->isAuth()
         );
     }
 
@@ -121,5 +122,14 @@ class FilterController extends ControllerHelper {
         
         return $entity;
     }
-
+    public function isAuth(){
+       $securityContext = $this->container->get('security.context');
+       if($securityContext->isGranted('IS_AUTHENTICATED_REMEMBERED')){
+           $auth = 1;
+       }
+       else{
+           $auth = 0;
+       }
+       return $auth;
+    }
 }
