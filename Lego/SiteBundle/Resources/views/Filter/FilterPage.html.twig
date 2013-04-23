@@ -80,12 +80,17 @@
 	<p class="brdr">
              <a href="{{ path('product', { 'translit': entity.translit }) }}" title="{{ entity.title }}">
                                         {{ entity.title }}
-             </a>
+             </a> <br />
+             {% for group in groups %}
+                      {% if group.id == entity.ProductGroupId %}
+                        {{ group.title }}
+                      {% endif %}
+                {% endfor %}
 	</p>
 
 	<div class="blk2">
 		<p class="price">{{ entity.price }} грн.</p>        
-		<p class="val"> {{ entity.article }}  
+		<p class="val">Артикул: {{ entity.article }}  
                 {% for attribut in atributs %}
                       {% if attribut[0].productId == entity.id %}
                         {{ attribut.name }}

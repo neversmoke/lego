@@ -93,9 +93,11 @@ class FilterController extends ControllerHelper {
                                    ->setParameter("from", $from_price);
         $product=$product->getQuery()->execute();
         $atributs = $this->getProductsTemplate();
+        $groups = $this->getCatalogsForProducts();
         return array(
             'entities' =>$product,
-            'atributs' => $atributs
+            'atributs' => $atributs,
+            'groups'   => $groups
         );
     }
 
@@ -110,6 +112,14 @@ class FilterController extends ControllerHelper {
                             'required'=>false
                         ))
                         ->getForm();
+    }
+   public function getCatalogsForProducts(){
+        
+        $em = $this->getDoctrine()->getEntityManager();
+        
+        $entity=$em->getRepository('ItcAdminBundle:Product\ProductGroup')->findAll();
+        
+        return $entity;
     }
 
 }

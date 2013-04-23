@@ -2734,7 +2734,7 @@ width:19px;position:absolute;right:-20px;top:-9px;}
 #from_price, #to_price{ border:1px solid #d4d4d4; width:40px; text-align:center; color:#7e7e7e; font-size:12px;}
 
 
-contact_lbl {position:absolute; margin: 29px 0 0 400px;  color:#fff; font: bold 26px "Arial Narrow",Arial;}
+.contact_lbl {position:absolute; margin: 29px 0 0 400px;  color:#fff; font: bold 26px "Arial Narrow",Arial;}
 .contact_lbl .tel_life { background:url(/bundles/legosite/img/tel_life.png) no-repeat 4px 2px;; padding:0 0 0 28px;}
 .contact_lbl .tel_mts { background:url(/bundles/legosite/img/tel_mts.png) no-repeat 0px 3px; padding:0 0 0 28px;}
 
