@@ -7,18 +7,19 @@
                 <div class="product-shop">
                     <div class="product-name">
                         <h1>{{ entity.title }}
+                            
+                        </h1>
+                            <br />
                             {% if entity.article!='' %}
-                                <span style="float:right; font-size:12px;">
+                                <span style="float:left; font-size:12px; font-weight: bold;">
                                     Артикул: {{ entity.article }}
                                 </span>
                             {% endif %}
-                        </h1>
-                            <br />
-                        {% if entity.count!='' %}
+                        {#{% if entity.count!='' %}
                             <span style="float:left; font-size:12px;font-weight: bold; color:greenyellow">В наличие</span>
                             {% else %}
                             <span style="float:left; font-size:12px; font-weight: bold; color:red">Под заказ</span>
-                        {% endif %}
+                        {% endif %}#}
                             <br />
                             <br />
                     </div>
