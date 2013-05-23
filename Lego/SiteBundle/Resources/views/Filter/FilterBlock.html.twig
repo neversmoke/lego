@@ -10,10 +10,13 @@
                         <p> 
                         <h4>Возраст:</h4>
                             {% for one in age %}
-                                <div style="float:left; margin-left: 5px;">
+                                <div style="float:left; margin-left: 5px; margin-left:10px;">
                                     <input type="checkbox" name="colection_age[{{ one.id }}]" value="{{ one.id }}"/>
                                      {{ one.name }}
                                 </div>
+                                {% if loop.index % 3 == 0%}
+                                    <br />
+                                {% endif %}
                             {% endfor %}
                         </p>
                         <br />
